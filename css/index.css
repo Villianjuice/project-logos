@@ -1,1 +1,222 @@
-/* No CSS *//*# sourceMappingURL=index.css.map */
+.hero {
+  position: relative;
+  min-height: 484px;
+  padding-top: 96px;
+  padding-bottom: 137px;
+}
+
+.hero__title {
+  max-width: 613px;
+  font-family: Zing Rust Demo;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 67px;
+  line-height: 109.2%;
+  text-align: center;
+  color: #FFFFFF;
+  -webkit-transform: rotate(-8.37deg);
+          transform: rotate(-8.37deg);
+}
+
+.hero__subtitle {
+  max-width: 177px;
+  font-family: Zing Rust Demo;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 25px;
+  line-height: 109.2%;
+  text-align: center;
+  color: #FFFFFF;
+  -webkit-transform: rotate(-8.37deg);
+          transform: rotate(-8.37deg);
+  background: linear-gradient(114.93deg, #618967 5.11%, #72A479 94%);
+  -webkit-transform: rotate(-8.02deg);
+          transform: rotate(-8.02deg);
+}
+
+.hero__bg {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.hero__img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.menu {
+  padding-top: 29px;
+  padding-bottom: 29px;
+  background: -webkit-gradient(linear, left bottom, left top, from(#211F20), to(#44403F));
+  background: linear-gradient(360deg, #211F20 0%, #44403F 100%);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.menu-nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-left: 0;
+}
+
+.menu-nav__link {
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: #CFCFCF;
+  position: relative;
+}
+
+.menu-nav__link::before {
+  content: '';
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 3px;
+  background: #618967;
+  -webkit-box-shadow: 0px 5px 12px rgba(114, 164, 121, 0.3);
+          box-shadow: 0px 5px 12px rgba(114, 164, 121, 0.3);
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  margin-top: 26px;
+}
+
+.menu-nav__link:hover {
+  color: white;
+}
+
+.menu-nav__link:hover::before {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+body {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+.container {
+  width: 1300px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+.header {
+  background: #403C3B;
+  -webkit-box-shadow: 0px 30px 60px rgba(34, 31, 32, 0.2);
+          box-shadow: 0px 30px 60px rgba(34, 31, 32, 0.2);
+  padding: 23px 0 24px 0;
+}
+
+.header__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__title {
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 25px;
+  letter-spacing: 0.15em;
+  color: #FFFFFF;
+}
+
+.header__label {
+  margin-left: 72px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #504B4A;
+  padding: 16px 20px;
+  border-radius: 10px;
+}
+
+.header__input {
+  margin-left: 14px;
+  width: 100%;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: #CFCFCF;
+}
+
+.header__input::-webkit-input-placeholder {
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: #CFCFCF;
+}
+
+.header__input:-ms-input-placeholder {
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: #CFCFCF;
+}
+
+.header__input::-ms-input-placeholder {
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: #CFCFCF;
+}
+
+.header__input::placeholder {
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: #CFCFCF;
+}
+
+.header__search {
+  margin-left: 258px;
+}
+/*# sourceMappingURL=index.css.map */
