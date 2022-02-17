@@ -1,73 +1,64 @@
 @import './helpers/mixins';
 @import './helpers/variables';
+@import'./helpers/reset-styles';
 
+@import'./section/header';
 @import './section/hero';
 @import './section/menu';
+@import'./section/item';
 
-
-body{
-    margin: 0;
-}
-a{
-    text-decoration: none;
-}
-li{
-    list-style-type: none;
-}
 .container{
-    width: 1300px;
+    max-width: 1300px;
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
-}
-.header{
-    background: #403C3B;
-    box-shadow: 0px 30px 60px rgba(34, 31, 32, 0.2);
-    padding: 23px 0 24px 0;
-    &__content{
+    &__hero{
         display: flex;
-        align-items: center;
     }
-    &__title{
-        font-family: Gilroy;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 25px;
-        line-height: 25px;
-        letter-spacing: 0.15em;
-        color: #FFFFFF;
-    }
-    &__label{
-        margin-left: 72px;
-        display: flex;
-        align-items: center;
-        background: #504B4A;
-        padding: 16px 20px;
-        border-radius: 10px;
-    }
-    &__input{
-        margin-left: 14px;
-        width: 100%;
-        background-color: transparent;
-        outline: none;
-        border: none;
-        font-family: Gilroy;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 18px;
-        line-height: 21px;
-        color: #CFCFCF;
-        &::placeholder{
-            font-family: Gilroy;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 18px;
-            line-height: 21px;
-            color: #CFCFCF;
-        }
-    }
-    &__search{
-        margin-left: 258px;
+    &__big{
+        max-width: 1365px;
     }
 }
-@import'./helpers/reset-styles';
+body{
+  background: linear-gradient(360deg, #211F20 0%, #44403F 100%);
+}
+.footer{
+  background: linear-gradient(270.7deg, #44403F 0.4%, #211F20 100%);
+  padding: 15px 0;
+  &__content{
+    display: flex;
+    align-items: center;
+    img{
+      width: 64px;
+    }
+  }
+  &__item{
+    margin:0 86px 0 64px;
+    &-title{
+      margin: 0 0 15px 64px;
+      @include font(700, 25px);
+      color: $text-white;
+    }
+    &-rights{
+      @include font(300, 13px);
+      color: $text-gray;
+      margin-bottom: 3px;
+    }
+    &-link{
+      @include font(400, 14px);
+      color: $text-white;
+    }
+  }
+  &__nav{
+    display: flex;
+    align-items: center;
+    color: $text-white;
+  }
+  &__link{
+    margin-right: 50px;
+    @include font(400, 18px);
+    color: $text-white;
+  }
+  
+}
+

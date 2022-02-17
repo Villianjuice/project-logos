@@ -1,22 +1,16 @@
 .menu{
     padding-top: 29px;
     padding-bottom: 29px;
-    background: linear-gradient(360deg, #211F20 0%, #44403F 100%);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     &-nav{
         &__list{
             display: flex;
             align-items: center;
             justify-content: space-between;
-            padding-left: 0;
         }
         &__link{
-            font-family: Gilroy;
-            font-style: normal;
-            font-weight: 500;
-            font-size: 18px;
-            line-height: 21px;
-            color: #CFCFCF;
+            @include font(500, 18px);
+            color: $text-gray;
             position: relative;
             &::before{
                 content: '';
