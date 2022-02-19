@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Londrina+Shadow&family=Lora:wght@500;600;700&display=swap" rel="stylesheet">
+    <title>LOGOS</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div id="header" class="header__content">
+                <a href="index.html" class="header__title">LOGOS</a>
+                <form>
+                    <label class="header__label">
+                        <img class="header__location" src="./img/svg/Location.svg" alt="Location">
+                        <input class="header__input" placeholder="Введите адрес доставки" type="text">
+                        <img class="header__search" src="./img/svg/Search.svg" alt="Search">
+                    </label>
+                </form>
+                <a href="tel:+7 (917) 510-57-59" class="header__contact-img"><img src="./img/svg/Calling.svg" alt=""></a>
+                <div class="header__contact">
+                    <p class="header__contact-span">Контакты:</p>
+                    <a href="tel:+7 (917) 510-57-59" class="header__contact-link">+7 (917) 510-57-59</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="menu">
+            <div class="container">
+                <nav class="menu-nav">
+                    <ul class="menu-nav__list">
+                        <li class="menu-nav__item">
+                            <a href="" class="menu-nav__link">Холодные закуски</a>
+                        </li>
+                        <li class="menu-nav__item">
+                            <a href="" class="menu-nav__link">Горячие закуски</a>
+                        </li>
+                        <li class="menu-nav__item">
+                            <a href="" class="menu-nav__link">Мясные блюда</a>
+                        </li>
+                        <li class="menu-nav__item">
+                            <a href="" class="menu-nav__link">Супы</a>
+                        </li>
+                        <li class="menu-nav__item">
+                            <a href="" class="menu-nav__link">Рыбные блюда</a>
+                        </li>
+                        <li class="menu-nav__item">
+                            <a href="" class="menu-nav__link">Гриль меню</a>
+                        </li>
+                        <li class="menu-nav__item">
+                            <a href="" class="menu-nav__link">Фирменные блюда</a>
+                        </li>
+                        <li class="menu-nav__item">
+                            <a href="" class="menu-nav__link">Напитки</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+
+        <section class="delivery">
+            <div class="container">
+                <div class="delivery__content">
+                    <a href="#" class="delivery__link">в корзину</a>
+                <form class="delivery-form">
+                    <h3 class="delivery-form__title delivery-form__title_active">Оформление заказа</h3>
+                    <div class="delivery__contact">
+                        <span class="delivery-form__subtitle">1. Контактная информация</span>
+                        <label class="delivery-form__label">
+                            <input class="delivery-form__input" type="text" placeholder="Имя*">
+                            <input class="delivery-form__input" type="text" placeholder="Телефон*">
+                        </label>
+                    </div>
+                    <div class="delivery__contact">
+                        <span class="delivery-form__subtitle">2. Доставка</span>
+                        <div class="btn-group">
+                            <a href="#"><button class="btn-group__first">Доставка</button></a>
+                            <a href="#"><button class="btn-group__third">Самовывоз</button></a>
+                            <div class="delivery__clock">
+                                <img src="./img/svg/clock.svg" alt="">
+                                <span class="clock">Доставим через  1 час 30 минут</span>
+                            </div>
+                        </div>
+                        <span class="delivery-form__subtitle">Адрес доставки</span>
+                        <label class="delivery-form__label">
+                            <input class="delivery-form__input" type="text" placeholder="Укажите улицу*">
+                            <input class="delivery-form__input" type="text" placeholder="Номер дома*">
+                        </label>
+                        <label class="delivery-form__label">
+                            <input class="delivery-form__address" type="text" placeholder="№ квартиры/офиса">
+                            <input class="delivery-form__address" type="text" placeholder="Подъезд">
+                            <input class="delivery-form__address" type="text" placeholder="Этаж">
+                        </label>
+                        <label class="delivery-form__label">
+                            <input class="delivery-form__coment" type="text" placeholder="Комментарий">
+                        </label>
+                    </div>
+                    <div class="delivery__contact">
+                        <span class="delivery-form__subtitle">3. Оплатить</span>
+                        <div class="btn-group">
+                            <button class="btn-group__first">Оплата онлайн</button>
+                            <button class="btn-group__second">Курьеру картой</button>
+                            <button class="btn-group__third">Наличными</button>
+                        </div>
+                        <label class="delivery-form__money">
+                            <input class="delivery-form__coment" type="text" placeholder="Сдача с">
+                        </label>
+                    </div>
+                    <div class="delivery__contact">
+                        <span class="delivery-form__subtitle">4. Когда доставить</span>
+                        <div class="btn-group">
+                            <button class="btn-group__first">В ближайшее время</button>
+                            <button class="btn-group__third">Ко времени</button>
+                        </div>
+                        <label class="delivery-form__label">
+                            <input class="delivery-form__clock" type="text" placeholder="Укажите время">
+                        </label>
+                    </div>
+                    <div class="delivery__contact delivery__contact_check">
+                            <input class="delivery-form__clock" type="checkbox">
+                            <label>Я согласен на обработку моих перс. данных в соответствии с <a href="#">Условиями</a></label>
+                            <button class="btn-group__btn">Оформить заказ</button>
+                    </div>
+                </form>
+            </div>
+                </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+          <div class="footer__content">
+            <a href="#header" class="footer__ref">
+              <img src="./img/svg/arrow-top.svg" alt="">
+            </a>
+            <ul class="footer__dev">
+              <li class="footer__item footer__item-title">LOGOS</li>
+              <li class="footer__item footer__item-rights">© ООО СК «АПШЕРОН»</li>
+              <li class="footer__item footer__item-rights">Все права защищены. 2010-2020</li>
+              <li class="footer__item footer__item-list">
+                <a href="#" class="footer__item-link">Пользовательское соглашение
+                </a>
+              </li>
+              <li class="footer__item footer__item-list">
+                <a href="#" class="footer__item-link">Карта сайта
+                </a>
+              </li>
+              <li class="footer__item footer__item-list">
+                <a href="#" class="footer__item-link">Политика конфиденциальности</a>
+              </li>
+            </ul>
+            <ul class="footer__nav">
+              <li ><a class="footer__link" href="#">О ресторане</a></li>
+              <li ><a class="footer__link" href="#">Условия доставки</a></li>
+              <li ><a class="footer__link" href="#">Возврат товара</a></li>
+              <li ><a class="footer__link" href="#">Акции</a></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+</body>
+</html>
