@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/index.css">
+  <link href="https://fonts.googleapis.com/css2?family=Londrina+Shadow&family=Lora:wght@500;600;700&display=swap"
+    rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+  <title>LOGOS</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div id="header" class="header__content">
+        <a href="index.html" class="header__title">LOGOS</a>
+        <form>
+          <label class="header__label">
+            <img class="header__location" src="./img/svg/Location.svg" alt="Location">
+            <input class="header__input" placeholder="Введите адрес доставки" type="text">
+            <img class="header__search" src="./img/svg/Search.svg" alt="Search">
+          </label>
+        </form>
+        <a href="tel:+7 (917) 510-57-59" class="header__contact-img"><img src="./img/svg/Calling.svg" alt=""></a>
+        <div class="header__contact">
+          <p class="header__contact-span">Контакты:</p>
+          <a href="tel:+7 (917) 510-57-59" class="header__contact-link">+7 (917) 510-57-59</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+
+    <section class="delivery">
+      <div class="container">
+        <div class="delivery__content">
+          <a href="#" class="delivery__link"><img src="./img/svg/iconmonstr-angel-left-thin.svg" alt=""> в корзину</a>
+          <h3 class="delivery__title delivery__title_active">Оформление заказа</h3>
+          <form action="'https://jsonplaceholder.typicode.com/posts" autocomplete="on" method="post" class="form">
+            <div class="form__item">
+              <h2 class="form__subtitle">1. Контактная информация</h2>
+              <div class="form__contact">
+                <input type="text" class="form__input form__input-50" placeholder="Имя *" required>
+                <input type="tel" class="form__input form__input-50" placeholder="Телефон *" required>
+              </div>
+            </div>
+            <div class="form__item">
+              <h2 class="form__subtitle">2. Доставка</h2>
+              <div class="form__contact">
+                <label class="form__lablel">
+                  <input type="radio" name="delivery" checked class="form__radio form__radio-del">
+                </label>
+                <label class="form__lablel">
+                  <input type="radio" name="delivery" class="form__radio form__radio-self">
+                </label>
+                
+                
+                <div class="form__desc"> <img src="./img/svg/clock 1.svg" alt=""> <span class="form__span">Доставим через  1 час 30 минут</span></div >
+              </div>
+              <h3 class="form__description">Адрес доставки</h3>
+              <div class="form__contact form__contact-margin">
+                <input type="number" class="form__input form__input-66" placeholder="Укажите улицу *" required>
+                <input type="number" class="form__input form__input-33" placeholder="Номер дома *" required> 
+              </div>
+              <div class="form__contact form__contact-margin">
+                <input type="number" class="form__input form__input-33" placeholder="№ квартиры/офиса">
+                <input type="number" class="form__input form__input-33" placeholder="Подъезд">
+                <input type="number" class="form__input form__input-33" placeholder="Этаж"> 
+              </div>
+              <div class="form__contact">
+                <!-- <input type="text" class="form__input" placeholder="Комментарий"> -->
+                 <textarea class="form__textarea" placeholder="Комментарий" name="" id="" cols="30" rows="5"></textarea>
+              </div>
+            </div>
+            <div class="form__item">
+              <h2 class="form__subtitle">3. Оплатить</h2>
+              <div class="form__contact form__contact-margin">
+                <label class="form__lablel">
+                  <input type="radio" name="pay" checked class="form__radio form__radio-online">
+                </label>
+                <label class="form__lablel">
+                  <input type="radio" name="pay" class="form__radio form__radio-сourier">
+                </label>
+                <label class="form__lablel">
+                  <input type="radio" name="pay" class="form__radio form__radio-cash">
+                </label>
+              </div>
+              <div class="form__contact">
+                <input type="number" class="form__input form__input-33" placeholder="Сдача с">
+                
+              </div>
+
+
+            </div>
+            <div class="form__item">
+              <h2 class="form__subtitle">4. Когда доставить</h2>
+              <div class="form__contact form__contact-margin">
+                <label class="form__lablel">
+                  <input type="radio" name="when" checked class="form__radio form__radio-soon">
+                </label>
+                <label class="form__lablel">
+                  <input type="radio" name="when" class="form__radio form__radio-after">
+                </label>
+                <input type="number" class="form__input form__input-time" placeholder="Укажите время">
+              </div>
+              <div class="form__count">
+                <span class="form__count-span">Кол-во персон</span>
+                <button type="button" data-action="minus"><img style="width: 16px;" src="./img/svg/minus-delivery.svg" alt=""></button>
+                <span class="form__count-value" data-counter>1</span>
+                <button type="button" data-action="plus"><img style="width: 16px;" src="./img/svg/plus-delivery.svg" alt=""></button>
+              </div>
+            </div>
+            <div class="form__item">
+              <label class="form__label">
+                <input class="form__radio-agree" type="checkbox" required>
+                <span class="form__span form__span-agree">Я согласен на обработку моих перс. данных в соответствии с </span>
+                <a class="form__link" href="#">Условиями</a>
+              </label>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__content">
+        <a href="#header" class="footer__ref">
+          <img src="./img/svg/arrow-top.svg" alt="">
+        </a>
+        <ul class="footer__dev">
+          <li class="footer__item footer__item-title">LOGOS</li>
+          <li class="footer__item footer__item-rights">© ООО СК «АПШЕРОН»</li>
+          <li class="footer__item footer__item-rights">Все права защищены. 2010-2020</li>
+          <li class="footer__item footer__item-list">
+            <a href="#" class="footer__item-link">Пользовательское соглашение
+            </a>
+          </li>
+          <li class="footer__item footer__item-list">
+            <a href="#" class="footer__item-link">Карта сайта
+            </a>
+          </li>
+          <li class="footer__item footer__item-list">
+            <a href="#" class="footer__item-link">Политика конфиденциальности</a>
+          </li>
+        </ul>
+        <ul class="footer__nav">
+          <li><a class="footer__link" href="#">О ресторане</a></li>
+          <li><a class="footer__link" href="#">Условия доставки</a></li>
+          <li><a class="footer__link" href="#">Возврат товара</a></li>
+          <li><a class="footer__link" href="#">Акции</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./js/countPerson.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+.btn-group{
+    &__first{
+        @include font(700,16px);
+        background: linear-gradient(90deg, #494544 0%, #504B4A 100%);
+        border: 1px solid #72A479;
+        box-sizing: border-box;
+        color: $text-white;
+        padding: 20px 31px;
+        cursor: pointer;
+        margin-bottom: 15px;
+        float: left;
+        border-radius: 10px 0px 0px 10px;
+    }
+    &__second{
+        @include font(700,16px);
+        background: linear-gradient(90deg, #494544 0%, #504B4A 100%);
+        border: 1px solid #72A479;
+        box-sizing: border-box;
+        color: $text-white;
+        padding: 20px 33px;
+        cursor: pointer;
+        margin-bottom: 15px;
+        float: left;
+        border-radius: 0;
+    }
+    &__third{
+        @include font(700,16px);
+        background: linear-gradient(90deg, #494544 0%, #504B4A 100%);
+        border: 1px solid #72A479;
+        box-sizing: border-box;
+        color: $text-white;
+        padding: 20px 48px;
+        cursor: pointer;
+        margin-bottom: 15px;
+        float: left;
+        border-radius: 0px 10px 10px 0px;
+    }
+    &__first,&__second, &__third {
+        &:hover{
+            background: linear-gradient(114.93deg, #618967 5.11%, #72A479 94%);
+            color: $text-white;
+        }
+    }
+    &__btn{
+        @include font(500,13px);
+        background: linear-gradient(114.93deg, #618967 5.11%, #72A479 94%);
+        border: none;
+        color: $text-white;
+        padding: 17px 50px;
+        cursor: pointer;
+        border-radius: 10px;
+    }
+}

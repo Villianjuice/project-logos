@@ -1,0 +1,112 @@
+.terms{
+    &-map img{
+        width: 639px;
+        height: 610px;
+        margin-left: 20px;
+        margin-bottom: 30px;
+    }
+    &-content{
+        display: flex;
+    }
+    &-item{
+        margin-bottom: 15px;
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+    &-item p{
+        @include font (400,16px);
+        line-height: 25px;
+        color: $text-white
+    }
+    &-item button{
+        @include font (400,16px);
+        color: $text-white
+    }
+    &__title{
+        @include font(700, 32px);
+        line-height: 39px;
+        text-transform: uppercase;
+        margin-top: 50px;
+        margin-bottom: 42px;
+        padding-left: 20px;
+        position: relative;
+        color: $text-white;
+        &::before{
+            content: '';
+            position: absolute;
+            display: block;
+            width: 4px;
+            height: 33px;
+            left: 0;
+            background: #618967;
+            transform: rotate(90deg);
+            transform: scale(0);
+            transition: 0.3s;
+        }
+        &:hover,&_active{
+            &::before {
+                transform: scale(1);
+            }
+        }
+    }
+    
+}
+.accordion {
+    background: linear-gradient(114.93deg, #618967 5.11%, #72A479 94%);
+    border-radius: 10px;
+    color: $text-white;
+    cursor: pointer;
+    padding: 18px 0 18px 30px;
+    width: 618px;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+  }
+
+  
+  /* Style the accordion panel. Note: hidden by default */
+  .panel {
+    padding: 60px 40px 60px 30px;
+    width: 618px;
+    background: linear-gradient(90deg, #494544 0%, #504B4A 100%);
+    border-radius: 0 0 10px 10px;
+    display: none;
+    overflow: hidden;
+  }
+
+.time{
+    &__title{
+        @include font(700, 22px);
+        color: $text-white;
+        line-height: 35px;
+    }
+    &__text{
+        @include font(700, 22px);
+        color: #CFCFCF;
+        line-height: 35px;
+        max-width: 697px;
+        margin-bottom: 40px;
+    }
+    &-content{
+        display: flex;
+        &__title{
+            @include font(700, 22px);
+            color: $text-white;
+            line-height: 35px;
+            margin-right: 100px;
+        }
+        &__subtitle{
+            @include font(700, 22px);
+            color: #CFCFCF;
+            line-height: 35px;
+            margin-bottom: 40px;
+            display: block;
+        }
+    }
+}
+.terms-item{
+    background: linear-gradient(90deg, #494544 0%, #504B4A 100%);
+    border-radius: 10px;
+}
