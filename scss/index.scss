@@ -6,6 +6,7 @@
 @import './section/hero';
 @import './section/menu';
 @import'./section/item';
+@import'./section/footer';
 
 @import'./pages/delivery';
 @import'./pages/terms';
@@ -26,44 +27,7 @@
 }
 body{
   background: linear-gradient(360deg, #211F20 0%, #44403F 100%);
+  color: $text-white;
 }
-.footer{
-  background: linear-gradient(270.7deg, #44403F 0.4%, #211F20 100%);
-  padding: 15px 0;
-  &__content{
-    display: flex;
-    align-items: center;
-    img{
-      width: 64px;
-    }
-  }
-  &__item{
-    margin:0 86px 0 64px;
-    &-title{
-      margin: 0 0 15px 64px;
-      @include font(700, 25px);
-      color: $text-white;
-    }
-    &-rights{
-      @include font(300, 13px);
-      color: $text-gray;
-      margin-bottom: 3px;
-    }
-    &-link{
-      @include font(400, 14px);
-      color: $text-white;
-    }
-  }
-  &__nav{
-    display: flex;
-    align-items: center;
-    color: $text-white;
-  }
-  &__link{
-    margin-right: 50px;
-    @include font(400, 18px);
-    color: $text-white;
-  }
-  
-}
+
 
