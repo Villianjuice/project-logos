@@ -1,0 +1,65 @@
+.card{
+    &__link{
+        @include font(700, 16px);
+        line-height: 19px;
+        color: $text-white;
+        display: flex;
+        align-items: center;
+        margin: 44px 0 28px 0;
+    }
+    &__content{
+        background: linear-gradient(90deg, #494544 0%, #504B4A 100%);
+        border-radius: 10px;
+        margin-bottom: 50px;
+    }
+    &__item{
+        display: flex;
+    }
+    &__info{
+        padding: 35px 0 25px 50px;
+    }
+    &__title{
+        @include font(700, 25px);
+        line-height: 30px;
+        color: $text-white;
+    }
+    &__text{
+        @include font(400, 14px);
+        line-height: 16px;
+        color: $text-gray;
+        margin: 10px 0 100px 0;
+    }
+    &__weight{
+        @include font(400, 14px);
+        line-height: 16px;
+        color: $text-gray;
+        margin-bottom: 20px;
+        display: block;
+    }
+    &__cart{
+        display: flex;
+        align-items: center
+    }
+    &__basket{
+        @include font(600, 14px);
+        line-height: 17px;
+        color: $text-white;
+        padding: 16px 20px;
+        background: $bg-green;
+        border-radius: 10px;
+    }
+    &__price{
+        @include font(700, 25px);
+        line-height: 30px;
+        color: $text-white;
+        margin-left: 25px;
+    }
+    img{
+        display: block;
+        border-radius: 10px 0 0 10px;
+    }
+    &__border{
+        border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+}
+

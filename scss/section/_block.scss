@@ -1,0 +1,68 @@
+.block{
+    &__content{
+        position: absolute;
+        background: #2E2B2C;
+        box-shadow: 0px 0px 70px rgba(0, 0, 0, 0.15);
+        border-radius: 15px;
+        z-index: 1;
+        margin-top: 60px;
+        padding: 25px 50px;
+    }
+    &-map{
+        position: relative;
+    }
+    &__title{
+        @include font(700, 30px);
+        line-height: 36px;
+        color: $text-white;
+        margin-bottom: 40px;
+    }
+    &__info{
+        display: flex;
+        gap: 14px;
+        margin-bottom: 20px;
+        &-two{
+            margin-bottom: 40px;
+        }
+    }
+    &__adress{
+        @include font(400, 14px);
+        line-height: 16px;
+        color: $text-gray;
+        display: block;
+    }
+    &__link{
+        @include font(400, 14px);
+        line-height: 16px;
+        color: $text-white;
+        max-width: 380px;
+    }
+    &__contact{
+        display: flex;
+        gap: 30px;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+    &__btn{
+        @include font(600, 13px);
+        line-height: 16px;
+        color: $text-white;
+        padding: 20px 30px;
+        background: $bg-green;
+        border-radius: 10px;
+    }
+    &-site{
+        display: flex;
+        justify-content: center;
+        &__title{
+            @include font(600, 16px);
+            line-height: 19px;
+            color: $text-white;
+            margin-right: 26px;
+        }
+        &__www{
+            display: flex;
+            gap: 10px;
+        }
+    }
+}
