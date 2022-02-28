@@ -9,6 +9,7 @@
 
 @import'./pages/delivery';
 @import'./pages/terms';
+@import './pages/cart';
 
 @import'./components/btn';
 
@@ -67,3 +68,13 @@ body{
   
 }
 
+
+.cart__container{
+    max-width: 1096px;
+    margin: 0 auto;
+}
+
+.total__container{
+    max-width: 763px;
+    margin: 0 auto;
+}

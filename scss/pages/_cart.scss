@@ -1,0 +1,204 @@
+
+.cart{
+  &__content {
+    padding-top: 50px;
+  }
+  &-item{
+    background: linear-gradient(90deg, #494544 0%, #504B4A 100%);
+    border-radius: 10px;
+    display: flex;
+    padding: 20px 20px 20px;
+    align-items: center;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    &:last-child{
+      margin-bottom: 40px;
+    }
+    &__info{
+      width: 117px;
+      height: 86px;
+      margin-right: 30px;
+    }
+    &__title{
+      @include font(700, 18px);
+     line-height: 22px;
+     color: $text-white
+    }
+    &__text{
+      @include font(400, 12px);
+      line-height: 14px;
+      max-width: 265px;
+      color: #A6A7AB;
+      margin-right: 200px;
+    }
+    &__price{
+     @include font(700, 18px);
+     line-height: 22px;
+     color: $text-white;
+     margin: 0 120px 0 100px;
+    }
+  }
+  &__title{
+    @include font(700, 32px);
+    line-height: 39px;
+    text-transform: uppercase;
+    margin-top: 20px;
+    margin-bottom: 71px;
+    padding-left: 20px;
+    position: relative;
+    color: $text-white;
+    &::before{
+        content: '';
+        position: absolute;
+        display: block;
+        width: 4px;
+        height: 33px;
+        left: 0;
+        background: #618967;
+        transform: rotate(90deg);
+        transform: scale(0);
+        transition: 0.3s;
+    }
+    &:hover,&_active{
+        &::before {
+            transform: scale(1);
+        }
+    }
+  }
+  &__subtitle{
+    @include font(500, 18px);
+    line-height: 18px;
+    text-transform: lowercase;
+    color: #72A479;
+    margin-left: 15px;
+  }  
+  &__link {
+    @include font(700, 16px);
+    line-height: 19px;
+    color: $text-white;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.units{
+  display: flex;
+  &__btn{
+    width: 26px;
+    height: 26px;
+    background: #72A479;
+    border-radius: 50%;
+    @include font(700, 16px);
+    color: $text-white;
+    cursor: pointer;
+    text-align: center;
+  }
+  &__number{
+    @include font(700, 20px);
+    line-height: 26px;
+    color: $text-white;
+    margin: 0 12px 0 12px;
+  }
+}
+
+.order{
+  &-items{
+    display: flex;
+    margin-bottom: 30px;
+    background: linear-gradient(90deg, #494544 0%, #504B4A 100%);
+    border-radius: 10px;
+    padding: 15px 25px 15px 25px;
+  }
+  &__title{
+    @include font(700, 25px);
+     line-height: 30px;
+     color: $text-white;
+     margin-bottom: 30px;
+  }
+  &-item{
+    margin-right: 65px;
+    &:last-child{
+      margin-right: 0;
+    }
+    &__img{
+      border-radius: 10px;
+      width: 225px;
+      height: 120px;
+      margin-bottom: 10px;
+    }
+    &__title{
+      @include font(700, 14px);
+      line-height: 17px;
+      color: $text-white;
+      margin-bottom: 11px;
+    }
+    &__btn{
+      @include font(700, 12px);
+      line-height: 14px;
+      color: #C6CED1;
+      margin-right: 12px;
+    }
+    &__price{
+      @include font(700, 12px);
+      line-height: 15px;
+      color: $text-white;
+      margin-top: 5px;
+    }
+  }
+  &__button{
+    display: flex;
+  }
+  &__btn{
+    width: 16px;
+    height: 16px;
+    background: #72A479;
+    border-radius: 50%;
+    @include font(500, 12px);
+    color: $text-white;
+    cursor: pointer;
+    text-align: center;
+    align-items: center;
+  }
+}
+
+.total{
+  margin-top: 50px;
+  margin-bottom: 90px;
+  &__content{
+    display: flex;
+    align-items: center;
+    background: linear-gradient(90deg, #494544 0%, #504B4A 100%);
+    border-radius: 10px;
+    padding: 20px 30px;
+  }
+  &__total{
+    margin-right: 230px;
+  }
+  &__title{
+    @include font(400, 12px);
+    line-height: 14px;
+    color: $text-white;
+    margin-bottom: 11px;
+  }
+  &__price{
+    @include font(700, 18px);
+    line-height: 22px;
+    color: $text-white;
+  }
+  &__money{
+    @include font(400, 12px);
+    line-height: 14px;
+    color: #72A479;
+  }
+  &__btn{
+    @include font(700, 14px);
+    line-height: 17px;
+    color: $text-white;
+    background: linear-gradient(114.93deg, #618967 5.11%, #72A479 94%);
+    border-radius: 10px;
+    padding: 17px 30px 17px 30px;
+  }
+}
+.border{
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  max-width: 1060px;
+}
