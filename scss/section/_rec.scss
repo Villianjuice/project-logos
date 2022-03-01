@@ -1,0 +1,58 @@
+.rec{
+    margin-bottom: 60px;
+    &__content{
+        display: flex;
+        gap: 20px;
+    }
+    &__item{
+        background: linear-gradient(90deg, #494544 0%, #504B4A 100%);
+        border-radius: 10px;
+        max-width: 325px;
+    }
+    &__img{
+        border-radius: 10px 10px 0 0;
+        max-width: 325px;
+    }
+    &-about{
+        padding: 14px 20px 18px 20px;
+        &__desc{
+            display: flex;
+            align-items: center;
+            justify-content: space-between
+        }
+        &__title{
+            @include font(700, 22px);
+            line-height: 27px;
+            color: $text-white;
+            margin-bottom: 8px;
+        }
+        &__gramm{
+            @include font(400, 12px);
+            line-height: 14px;
+            color: $text-white;
+            display: block;
+        }
+        &__text{
+            @include font(400, 13px);
+            line-height: 17px;
+            color: $text-gray;
+            margin-bottom: 15px;
+            max-width: 250px;
+        }
+        &__basket{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        &__price{
+            @include font(600, 20px);
+            line-height: 24px;
+            color: $text-white;
+        }
+    }
+    &-basket{
+        padding: 13px 20px;
+        background: $bg-green;
+        border-radius: 10px;
+    }
+}

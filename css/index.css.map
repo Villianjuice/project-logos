@@ -13,6 +13,12 @@
         "../scss/section/_footer.scss",
         "../scss/pages/_delivery.scss",
         "../scss/pages/_terms.scss",
+        "../scss/section/_block.scss",
+        "../scss/section/_rec.scss",
+        "../scss/pages/_delivery.scss",
+        "../scss/pages/_terms.scss",
+        "../scss/pages/_cart.scss",
+        "../scss/pages/_cardProduct.scss",
         "../scss/components/_btn.scss"
     ],
     "names": [],
