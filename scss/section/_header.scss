@@ -5,13 +5,13 @@
     &__content{
         display: flex;
         align-items: center;
+        justify-content: space-between;
     }
     &__title{
         @include font(700, 25px);
         color: $text-white;
     }
     &__label{
-        margin-left: 72px;
         display: flex;
         align-items: center;
         background: $bg-brown-light;
@@ -35,7 +35,8 @@
         margin-left: 258px;
     }
     &__contact{
-        margin-left: 20px;
+        display: flex;
+        align-items: center;
         &-span{
             @include font(300, 15px);
             color: $text-gray;
@@ -52,10 +53,37 @@
             flex-direction: row;
             justify-content: center;
             border-radius: 50%;
-            margin-left: 50px;
+            margin-right: 10px;
             img{
                 width: 16px;
             }
+        }
+    }
+    &__basket{
+        display: flex;
+        align-items: center;
+        padding: 7px 13px 7px 24px;
+        background: $bg-green;
+        border-radius: 10px;
+        &-desc{
+            @include font(600, 14px);
+            color: $text-white;
+            padding: 10px 20px 10px 0;
+            display: block;
+            border-right: 2px solid rgba(255, 255, 255, 0.3);;
+        }
+        &-count{
+            margin-right: 12px;
+            color: $bg-brown;
+            @include font (600, 12px);
+            width: 24px;
+            height: 24px;
+            background: $text-white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            margin-left: 12px;
         }
     }
 }

@@ -8,8 +8,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/index.css">
-<link href="https://fonts.googleapis.com/css2?family=Londrina+Shadow&family=Lora:wght@500;600;700&display=swap" rel="stylesheet">
-        <title>LOGOS</title>
+    <link href="https://fonts.googleapis.com/css2?family=Londrina+Shadow&family=Lora:wght@500;600;700&display=swap" rel="stylesheet">
+    <meta  name="viewport"  content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"/>
+    <link  rel="stylesheet"  href="./css/swiper-bundle.min.css"/>
+    <title>LOGOS</title>
 </head>
 <body>
 <header class="header">
@@ -23,11 +25,16 @@
                     <img class="header__search" src="./img/svg/Search.svg" alt="Search">
                 </label>
             </form>
-            <a href="tel:+7 (917) 510-57-59" class="header__contact-img"><img src="./img/svg/Calling.svg" alt=""></a>
+            
             <div class="header__contact">
-                <p class="header__contact-span">Контакты:</p>
-                <a href="tel:+7 (917) 510-57-59" class="header__contact-link">+7 (917) 510-57-59</a>
-            </div>
+                <a href="tel:+7 (917) 510-57-59" class="header__contact-img"><img src="./img/svg/Calling.svg" alt=""></a>
+                <div><p class="header__contact-span">Контакты:</p>
+                  <a href="tel:+7 (917) 510-57-59" class="header__contact-link">+7 (917) 510-57-59</a></div>
+                </div>
+            <a href="#" class="header__basket">
+              <span class="header__basket-desc">Корзина</span>
+              <div class="header__basket-count">1</div>
+            </a>
         </div>
     </div>
 </header>
@@ -77,225 +84,769 @@
       <div class="item__content">
         <div class="item__title">ХОЛОДНЫЕ ЗАКУСКИ</div>
         <div class="item__type">
-          <div class="item__items">
-            <img class="item__img" src="./img/jpg/menu 1.jpg" alt="">
-            <div class="item__about">
-              <div class="item__about-desc">
-                <h2 class="item__about-name">Ягненок</h2>
-                <span class="item__about-weight">Вес: 225 г</span>
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="item__items swiper-slide">
+                <img class="item__img" src="./img/jpg/menu 1.jpg" alt="">
+                <div class="item__about">
+                  <div class="item__about-desc">
+                    <h2 class="item__about-name">Ягненок</h2>
+                    <span class="item__about-weight">Вес: 225 г</span>
+                  </div>
+                  <p class="item__about-text">
+                    Фаршированный гречневой кашей, курагой, апельсином и зеленым яблоком
+                  </p>
+                  <div class="item__about-basket">
+                    <button class="item__about-btn"><img src="./img/svg/1.svg" alt=""></button>
+                    <h2 class="item__about-price">450 ₽</h2>
+                    <button class="item__about-btn"><img src="./img/svg/plus.svg" alt=""></button>
+                  </div>
+                </div>
               </div>
-              <p class="item__about-text">
-                Фаршированный гречневой кашей, курагой, апельсином и зеленым яблоком
-              </p>
-              <div class="item__about-basket">
-                <button class="item__about-btn"><img src="./img/svg/1.svg" alt=""></button>
-                <h2 class="item__about-price">450 ₽</h2>
-                <button class="item__about-btn"><img src="./img/svg/plus.svg" alt=""></button>
+              <div class="item__items swiper-slide">
+                <img class="item__img" src="./img/jpg/menu 1.jpg" alt="">
+                <div class="item__about">
+                  <div class="item__about-desc">
+                    <h2 class="item__about-name">Ягненок</h2>
+                    <span class="item__about-weight">Вес: 225 г</span>
+                  </div>
+                  <p class="item__about-text">
+                    Фаршированный гречневой кашей, курагой, апельсином и зеленым яблоком
+                  </p>
+                  <div class="item__about-basket">
+                    <button class="item__about-btn"><img src="./img/svg/1.svg" alt=""></button>
+                    <h2 class="item__about-price">450 ₽</h2>
+                    <button class="item__about-btn"><img src="./img/svg/plus.svg" alt=""></button>
+                  </div>
+                </div>
+              </div>
+              <div class="item__items swiper-slide">
+                <img class="item__img" src="./img/jpg/menu 1.jpg" alt="">
+                <div class="item__about">
+                  <div class="item__about-desc">
+                    <h2 class="item__about-name">Ягненок</h2>
+                    <span class="item__about-weight">Вес: 225 г</span>
+                  </div>
+                  <p class="item__about-text">
+                    Фаршированный гречневой кашей, курагой, апельсином и зеленым яблоком
+                  </p>
+                  <div class="item__about-basket">
+                    <button class="item__about-btn"><img src="./img/svg/1.svg" alt=""></button>
+                    <h2 class="item__about-price">450 ₽</h2>
+                    <button class="item__about-btn"><img src="./img/svg/plus.svg" alt=""></button>
+                  </div>
+                </div>
+              </div>
+              <div class="item__items swiper-slide">
+                <img class="item__img" src="./img/jpg/menu 1.jpg" alt="">
+                <div class="item__about">
+                  <div class="item__about-desc">
+                    <h2 class="item__about-name">Ягненок</h2>
+                    <span class="item__about-weight">Вес: 225 г</span>
+                  </div>
+                  <p class="item__about-text">
+                    Фаршированный гречневой кашей, курагой, апельсином и зеленым яблоком
+                  </p>
+                  <div class="item__about-basket">
+                    <button class="item__about-btn"><img src="./img/svg/1.svg" alt=""></button>
+                    <h2 class="item__about-price">450 ₽</h2>
+                    <button class="item__about-btn"><img src="./img/svg/plus.svg" alt=""></button>
+                  </div>
+                </div>
+              </div>
+              <div class="item__items swiper-slide">
+                <img class="item__img" src="./img/jpg/menu 1.jpg" alt="">
+                <div class="item__about">
+                  <div class="item__about-desc">
+                    <h2 class="item__about-name">Ягненок</h2>
+                    <span class="item__about-weight">Вес: 225 г</span>
+                  </div>
+                  <p class="item__about-text">
+                    Фаршированный гречневой кашей, курагой, апельсином и зеленым яблоком
+                  </p>
+                  <div class="item__about-basket">
+                    <button class="item__about-btn"><img src="./img/svg/1.svg" alt=""></button>
+                    <h2 class="item__about-price">450 ₽</h2>
+                    <button class="item__about-btn"><img src="./img/svg/plus.svg" alt=""></button>
+                  </div>
+                </div>
+              </div>
+              <div class="item__items swiper-slide">
+                <img class="item__img" src="./img/jpg/menu 1.jpg" alt="">
+                <div class="item__about">
+                  <div class="item__about-desc">
+                    <h2 class="item__about-name">Ягненок</h2>
+                    <span class="item__about-weight">Вес: 225 г</span>
+                  </div>
+                  <p class="item__about-text">
+                    Фаршированный гречневой кашей, курагой, апельсином и зеленым яблоком
+                  </p>
+                  <div class="item__about-basket">
+                    <button class="item__about-btn"><img src="./img/svg/1.svg" alt=""></button>
+                    <h2 class="item__about-price">450 ₽</h2>
+                    <button class="item__about-btn"><img src="./img/svg/plus.svg" alt=""></button>
+                  </div>
+                </div>
+              </div>
+              <div class="item__items swiper-slide">
+                <img class="item__img" src="./img/jpg/menu 1.jpg" alt="">
+                <div class="item__about">
+                  <div class="item__about-desc">
+                    <h2 class="item__about-name">Ягненок</h2>
+                    <span class="item__about-weight">Вес: 225 г</span>
+                  </div>
+                  <p class="item__about-text">
+                    Фаршированный гречневой кашей, курагой, апельсином и зеленым яблоком
+                  </p>
+                  <div class="item__about-basket">
+                    <button class="item__about-btn"><img src="./img/svg/1.svg" alt=""></button>
+                    <h2 class="item__about-price">450 ₽</h2>
+                    <button class="item__about-btn"><img src="./img/svg/plus.svg" alt=""></button>
+                  </div>
+                </div>
+              </div>
+              <div class="item__items swiper-slide">
+                <img class="item__img" src="./img/jpg/menu 1.jpg" alt="">
+                <div class="item__about">
+                  <div class="item__about-desc">
+                    <h2 class="item__about-name">Ягненок</h2>
+                    <span class="item__about-weight">Вес: 225 г</span>
+                  </div>
+                  <p class="item__about-text">
+                    Фаршированный гречневой кашей, курагой, апельсином и зеленым яблоком
+                  </p>
+                  <div class="item__about-basket">
+                    <button class="item__about-btn"><img src="./img/svg/1.svg" alt=""></button>
+                    <h2 class="item__about-price">450 ₽</h2>
+                    <button class="item__about-btn"><img src="./img/svg/plus.svg" alt=""></button>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="item__items">
-            <img class="item__img" src="./img/jpg/menu 1.jpg" alt="">
-            <div class="item__about">
-              <div class="item__about-desc">
-                <h2 class="item__about-name">Ягненок</h2>
-                <span class="item__about-weight">Вес: 225 г</span>
-              </div>
-              <p class="item__about-text">
-                Фаршированный гречневой кашей, курагой, апельсином и зеленым яблоком
-              </p>
-              <div class="item__about-basket">
-                <button class="item__about-btn"><img src="./img/svg/1.svg" alt=""></button>
-                <h2 class="item__about-price">450 ₽</h2>
-                <button class="item__about-btn"><img src="./img/svg/plus.svg" alt=""></button>
-              </div>
-            </div>
-          </div>
-          <div class="item__items">
-            <img class="item__img" src="./img/jpg/menu 1.jpg" alt="">
-            <div class="item__about">
-              <div class="item__about-desc">
-                <h2 class="item__about-name">Ягненок</h2>
-                <span class="item__about-weight">Вес: 225 г</span>
-              </div>
-              <p class="item__about-text">
-                Фаршированный гречневой кашей, курагой, апельсином и зеленым яблоком
-              </p>
-              <div class="item__about-basket">
-                <button class="item__about-btn"><img src="./img/svg/1.svg" alt=""></button>
-                <h2 class="item__about-price">450 ₽</h2>
-                <button class="item__about-btn"><img src="./img/svg/plus.svg" alt=""></button>
-              </div>
-            </div>
-          </div>
-          <div class="item__items">
-            <img class="item__img" src="./img/jpg/menu 1.jpg" alt="">
-            <div class="item__about">
-              <div class="item__about-desc">
-                <h2 class="item__about-name">Ягненок</h2>
-                <span class="item__about-weight">Вес: 225 г</span>
-              </div>
-              <p class="item__about-text">
-                Фаршированный гречневой кашей, курагой, апельсином и зеленым яблоком
-              </p>
-              <div class="item__about-basket">
-                <button class="item__about-btn"><img src="./img/svg/1.svg" alt=""></button>
-                <h2 class="item__about-price">450 ₽</h2>
-                <button class="item__about-btn"><img src="./img/svg/plus.svg" alt=""></button>
-              </div>
-            </div>
+            <div class="swiper-pagination"></div>
           </div>
         </div>
       </div>
       <div class="item__content">
         <div class="item__title">ХОЛОДНЫЕ ЗАКУСКИ</div>
         <div class="item__type">
-          <div class="item__items">
-            <img class="item__img" src="./img/jpg/menu 1.jpg" alt="">
-            <div class="item__about">
-              <div class="item__about-desc">
-                <h2 class="item__about-name">Ягненок</h2>
-                <span class="item__about-weight">Вес: 225 г</span>
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="item__items swiper-slide">
+                <img class="item__img" src="./img/jpg/menu 1.jpg" alt="">
+                <div class="item__about">
+                  <div class="item__about-desc">
+                    <h2 class="item__about-name">Ягненок</h2>
+                    <span class="item__about-weight">Вес: 225 г</span>
+                  </div>
+                  <p class="item__about-text">
+                    Фаршированный гречневой кашей, курагой, апельсином и зеленым яблоком
+                  </p>
+                  <div class="item__about-basket">
+                    <button class="item__about-btn"><img src="./img/svg/1.svg" alt=""></button>
+                    <h2 class="item__about-price">450 ₽</h2>
+                    <button class="item__about-btn"><img src="./img/svg/plus.svg" alt=""></button>
+                  </div>
+                </div>
               </div>
-              <p class="item__about-text">
-                Фаршированный гречневой кашей, курагой, апельсином и зеленым яблоком
-              </p>
-              <div class="item__about-basket">
-                <button class="item__about-btn"><img src="./img/svg/1.svg" alt=""></button>
-                <h2 class="item__about-price">450 ₽</h2>
-                <button class="item__about-btn"><img src="./img/svg/plus.svg" alt=""></button>
+              <div class="item__items swiper-slide">
+                <img class="item__img" src="./img/jpg/menu 1.jpg" alt="">
+                <div class="item__about">
+                  <div class="item__about-desc">
+                    <h2 class="item__about-name">Ягненок</h2>
+                    <span class="item__about-weight">Вес: 225 г</span>
+                  </div>
+                  <p class="item__about-text">
+                    Фаршированный гречневой кашей, курагой, апельсином и зеленым яблоком
+                  </p>
+                  <div class="item__about-basket">
+                    <button class="item__about-btn"><img src="./img/svg/1.svg" alt=""></button>
+                    <h2 class="item__about-price">450 ₽</h2>
+                    <button class="item__about-btn"><img src="./img/svg/plus.svg" alt=""></button>
+                  </div>
+                </div>
+              </div>
+              <div class="item__items swiper-slide">
+                <img class="item__img" src="./img/jpg/menu 1.jpg" alt="">
+                <div class="item__about">
+                  <div class="item__about-desc">
+                    <h2 class="item__about-name">Ягненок</h2>
+                    <span class="item__about-weight">Вес: 225 г</span>
+                  </div>
+                  <p class="item__about-text">
+                    Фаршированный гречневой кашей, курагой, апельсином и зеленым яблоком
+                  </p>
+                  <div class="item__about-basket">
+                    <button class="item__about-btn"><img src="./img/svg/1.svg" alt=""></button>
+                    <h2 class="item__about-price">450 ₽</h2>
+                    <button class="item__about-btn"><img src="./img/svg/plus.svg" alt=""></button>
+                  </div>
+                </div>
+              </div>
+              <div class="item__items swiper-slide">
+                <img class="item__img" src="./img/jpg/menu 1.jpg" alt="">
+                <div class="item__about">
+                  <div class="item__about-desc">
+                    <h2 class="item__about-name">Ягненок</h2>
+                    <span class="item__about-weight">Вес: 225 г</span>
+                  </div>
+                  <p class="item__about-text">
+                    Фаршированный гречневой кашей, курагой, апельсином и зеленым яблоком
+                  </p>
+                  <div class="item__about-basket">
+                    <button class="item__about-btn"><img src="./img/svg/1.svg" alt=""></button>
+                    <h2 class="item__about-price">450 ₽</h2>
+                    <button class="item__about-btn"><img src="./img/svg/plus.svg" alt=""></button>
+                  </div>
+                </div>
+              </div>
+              <div class="item__items swiper-slide">
+                <img class="item__img" src="./img/jpg/menu 1.jpg" alt="">
+                <div class="item__about">
+                  <div class="item__about-desc">
+                    <h2 class="item__about-name">Ягненок</h2>
+                    <span class="item__about-weight">Вес: 225 г</span>
+                  </div>
+                  <p class="item__about-text">
+                    Фаршированный гречневой кашей, курагой, апельсином и зеленым яблоком
+                  </p>
+                  <div class="item__about-basket">
+                    <button class="item__about-btn"><img src="./img/svg/1.svg" alt=""></button>
+                    <h2 class="item__about-price">450 ₽</h2>
+                    <button class="item__about-btn"><img src="./img/svg/plus.svg" alt=""></button>
+                  </div>
+                </div>
+              </div>
+              <div class="item__items swiper-slide">
+                <img class="item__img" src="./img/jpg/menu 1.jpg" alt="">
+                <div class="item__about">
+                  <div class="item__about-desc">
+                    <h2 class="item__about-name">Ягненок</h2>
+                    <span class="item__about-weight">Вес: 225 г</span>
+                  </div>
+                  <p class="item__about-text">
+                    Фаршированный гречневой кашей, курагой, апельсином и зеленым яблоком
+                  </p>
+                  <div class="item__about-basket">
+                    <button class="item__about-btn"><img src="./img/svg/1.svg" alt=""></button>
+                    <h2 class="item__about-price">450 ₽</h2>
+                    <button class="item__about-btn"><img src="./img/svg/plus.svg" alt=""></button>
+                  </div>
+                </div>
+              </div>
+              <div class="item__items swiper-slide">
+                <img class="item__img" src="./img/jpg/menu 1.jpg" alt="">
+                <div class="item__about">
+                  <div class="item__about-desc">
+                    <h2 class="item__about-name">Ягненок</h2>
+                    <span class="item__about-weight">Вес: 225 г</span>
+                  </div>
+                  <p class="item__about-text">
+                    Фаршированный гречневой кашей, курагой, апельсином и зеленым яблоком
+                  </p>
+                  <div class="item__about-basket">
+                    <button class="item__about-btn"><img src="./img/svg/1.svg" alt=""></button>
+                    <h2 class="item__about-price">450 ₽</h2>
+                    <button class="item__about-btn"><img src="./img/svg/plus.svg" alt=""></button>
+                  </div>
+                </div>
+              </div>
+              <div class="item__items swiper-slide">
+                <img class="item__img" src="./img/jpg/menu 1.jpg" alt="">
+                <div class="item__about">
+                  <div class="item__about-desc">
+                    <h2 class="item__about-name">Ягненок</h2>
+                    <span class="item__about-weight">Вес: 225 г</span>
+                  </div>
+                  <p class="item__about-text">
+                    Фаршированный гречневой кашей, курагой, апельсином и зеленым яблоком
+                  </p>
+                  <div class="item__about-basket">
+                    <button class="item__about-btn"><img src="./img/svg/1.svg" alt=""></button>
+                    <h2 class="item__about-price">450 ₽</h2>
+                    <button class="item__about-btn"><img src="./img/svg/plus.svg" alt=""></button>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="item__items">
-            <img class="item__img" src="./img/jpg/menu 1.jpg" alt="">
-            <div class="item__about">
-              <div class="item__about-desc">
-                <h2 class="item__about-name">Ягненок</h2>
-                <span class="item__about-weight">Вес: 225 г</span>
-              </div>
-              <p class="item__about-text">
-                Фаршированный гречневой кашей, курагой, апельсином и зеленым яблоком
-              </p>
-              <div class="item__about-basket">
-                <button class="item__about-btn"><img src="./img/svg/1.svg" alt=""></button>
-                <h2 class="item__about-price">450 ₽</h2>
-                <button class="item__about-btn"><img src="./img/svg/plus.svg" alt=""></button>
-              </div>
-            </div>
-          </div>
-          <div class="item__items">
-            <img class="item__img" src="./img/jpg/menu 1.jpg" alt="">
-            <div class="item__about">
-              <div class="item__about-desc">
-                <h2 class="item__about-name">Ягненок</h2>
-                <span class="item__about-weight">Вес: 225 г</span>
-              </div>
-              <p class="item__about-text">
-                Фаршированный гречневой кашей, курагой, апельсином и зеленым яблоком
-              </p>
-              <div class="item__about-basket">
-                <button class="item__about-btn"><img src="./img/svg/1.svg" alt=""></button>
-                <h2 class="item__about-price">450 ₽</h2>
-                <button class="item__about-btn"><img src="./img/svg/plus.svg" alt=""></button>
-              </div>
-            </div>
-          </div>
-          <div class="item__items">
-            <img class="item__img" src="./img/jpg/menu 1.jpg" alt="">
-            <div class="item__about">
-              <div class="item__about-desc">
-                <h2 class="item__about-name">Ягненок</h2>
-                <span class="item__about-weight">Вес: 225 г</span>
-              </div>
-              <p class="item__about-text">
-                Фаршированный гречневой кашей, курагой, апельсином и зеленым яблоком
-              </p>
-              <div class="item__about-basket">
-                <button class="item__about-btn"><img src="./img/svg/1.svg" alt=""></button>
-                <h2 class="item__about-price">450 ₽</h2>
-                <button class="item__about-btn"><img src="./img/svg/plus.svg" alt=""></button>
-              </div>
-            </div>
+            <div class="swiper-pagination"></div>
           </div>
         </div>
       </div>
       <div class="item__content">
         <div class="item__title">ХОЛОДНЫЕ ЗАКУСКИ</div>
         <div class="item__type">
-          <div class="item__items">
-            <img class="item__img" src="./img/jpg/menu 1.jpg" alt="">
-            <div class="item__about">
-              <div class="item__about-desc">
-                <h2 class="item__about-name">Ягненок</h2>
-                <span class="item__about-weight">Вес: 225 г</span>
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="item__items swiper-slide">
+                <img class="item__img" src="./img/jpg/menu 1.jpg" alt="">
+                <div class="item__about">
+                  <div class="item__about-desc">
+                    <h2 class="item__about-name">Ягненок</h2>
+                    <span class="item__about-weight">Вес: 225 г</span>
+                  </div>
+                  <p class="item__about-text">
+                    Фаршированный гречневой кашей, курагой, апельсином и зеленым яблоком
+                  </p>
+                  <div class="item__about-basket">
+                    <button class="item__about-btn"><img src="./img/svg/1.svg" alt=""></button>
+                    <h2 class="item__about-price">450 ₽</h2>
+                    <button class="item__about-btn"><img src="./img/svg/plus.svg" alt=""></button>
+                  </div>
+                </div>
               </div>
-              <p class="item__about-text">
-                Фаршированный гречневой кашей, курагой, апельсином и зеленым яблоком
-              </p>
-              <div class="item__about-basket">
-                <button class="item__about-btn"><img src="./img/svg/1.svg" alt=""></button>
-                <h2 class="item__about-price">450 ₽</h2>
-                <button class="item__about-btn"><img src="./img/svg/plus.svg" alt=""></button>
+              <div class="item__items swiper-slide">
+                <img class="item__img" src="./img/jpg/menu 1.jpg" alt="">
+                <div class="item__about">
+                  <div class="item__about-desc">
+                    <h2 class="item__about-name">Ягненок</h2>
+                    <span class="item__about-weight">Вес: 225 г</span>
+                  </div>
+                  <p class="item__about-text">
+                    Фаршированный гречневой кашей, курагой, апельсином и зеленым яблоком
+                  </p>
+                  <div class="item__about-basket">
+                    <button class="item__about-btn"><img src="./img/svg/1.svg" alt=""></button>
+                    <h2 class="item__about-price">450 ₽</h2>
+                    <button class="item__about-btn"><img src="./img/svg/plus.svg" alt=""></button>
+                  </div>
+                </div>
+              </div>
+              <div class="item__items swiper-slide">
+                <img class="item__img" src="./img/jpg/menu 1.jpg" alt="">
+                <div class="item__about">
+                  <div class="item__about-desc">
+                    <h2 class="item__about-name">Ягненок</h2>
+                    <span class="item__about-weight">Вес: 225 г</span>
+                  </div>
+                  <p class="item__about-text">
+                    Фаршированный гречневой кашей, курагой, апельсином и зеленым яблоком
+                  </p>
+                  <div class="item__about-basket">
+                    <button class="item__about-btn"><img src="./img/svg/1.svg" alt=""></button>
+                    <h2 class="item__about-price">450 ₽</h2>
+                    <button class="item__about-btn"><img src="./img/svg/plus.svg" alt=""></button>
+                  </div>
+                </div>
+              </div>
+              <div class="item__items swiper-slide">
+                <img class="item__img" src="./img/jpg/menu 1.jpg" alt="">
+                <div class="item__about">
+                  <div class="item__about-desc">
+                    <h2 class="item__about-name">Ягненок</h2>
+                    <span class="item__about-weight">Вес: 225 г</span>
+                  </div>
+                  <p class="item__about-text">
+                    Фаршированный гречневой кашей, курагой, апельсином и зеленым яблоком
+                  </p>
+                  <div class="item__about-basket">
+                    <button class="item__about-btn"><img src="./img/svg/1.svg" alt=""></button>
+                    <h2 class="item__about-price">450 ₽</h2>
+                    <button class="item__about-btn"><img src="./img/svg/plus.svg" alt=""></button>
+                  </div>
+                </div>
+              </div>
+              <div class="item__items swiper-slide">
+                <img class="item__img" src="./img/jpg/menu 1.jpg" alt="">
+                <div class="item__about">
+                  <div class="item__about-desc">
+                    <h2 class="item__about-name">Ягненок</h2>
+                    <span class="item__about-weight">Вес: 225 г</span>
+                  </div>
+                  <p class="item__about-text">
+                    Фаршированный гречневой кашей, курагой, апельсином и зеленым яблоком
+                  </p>
+                  <div class="item__about-basket">
+                    <button class="item__about-btn"><img src="./img/svg/1.svg" alt=""></button>
+                    <h2 class="item__about-price">450 ₽</h2>
+                    <button class="item__about-btn"><img src="./img/svg/plus.svg" alt=""></button>
+                  </div>
+                </div>
+              </div>
+              <div class="item__items swiper-slide">
+                <img class="item__img" src="./img/jpg/menu 1.jpg" alt="">
+                <div class="item__about">
+                  <div class="item__about-desc">
+                    <h2 class="item__about-name">Ягненок</h2>
+                    <span class="item__about-weight">Вес: 225 г</span>
+                  </div>
+                  <p class="item__about-text">
+                    Фаршированный гречневой кашей, курагой, апельсином и зеленым яблоком
+                  </p>
+                  <div class="item__about-basket">
+                    <button class="item__about-btn"><img src="./img/svg/1.svg" alt=""></button>
+                    <h2 class="item__about-price">450 ₽</h2>
+                    <button class="item__about-btn"><img src="./img/svg/plus.svg" alt=""></button>
+                  </div>
+                </div>
+              </div>
+              <div class="item__items swiper-slide">
+                <img class="item__img" src="./img/jpg/menu 1.jpg" alt="">
+                <div class="item__about">
+                  <div class="item__about-desc">
+                    <h2 class="item__about-name">Ягненок</h2>
+                    <span class="item__about-weight">Вес: 225 г</span>
+                  </div>
+                  <p class="item__about-text">
+                    Фаршированный гречневой кашей, курагой, апельсином и зеленым яблоком
+                  </p>
+                  <div class="item__about-basket">
+                    <button class="item__about-btn"><img src="./img/svg/1.svg" alt=""></button>
+                    <h2 class="item__about-price">450 ₽</h2>
+                    <button class="item__about-btn"><img src="./img/svg/plus.svg" alt=""></button>
+                  </div>
+                </div>
+              </div>
+              <div class="item__items swiper-slide">
+                <img class="item__img" src="./img/jpg/menu 1.jpg" alt="">
+                <div class="item__about">
+                  <div class="item__about-desc">
+                    <h2 class="item__about-name">Ягненок</h2>
+                    <span class="item__about-weight">Вес: 225 г</span>
+                  </div>
+                  <p class="item__about-text">
+                    Фаршированный гречневой кашей, курагой, апельсином и зеленым яблоком
+                  </p>
+                  <div class="item__about-basket">
+                    <button class="item__about-btn"><img src="./img/svg/1.svg" alt=""></button>
+                    <h2 class="item__about-price">450 ₽</h2>
+                    <button class="item__about-btn"><img src="./img/svg/plus.svg" alt=""></button>
+                  </div>
+                </div>
               </div>
             </div>
+            <div class="swiper-pagination"></div>
           </div>
-          <div class="item__items">
-            <img class="item__img" src="./img/jpg/menu 1.jpg" alt="">
-            <div class="item__about">
-              <div class="item__about-desc">
-                <h2 class="item__about-name">Ягненок</h2>
-                <span class="item__about-weight">Вес: 225 г</span>
+        </div>
+      </div>
+      <div class="item__content">
+        <div class="item__title">ХОЛОДНЫЕ ЗАКУСКИ</div>
+        <div class="item__type">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="item__items swiper-slide">
+                <img class="item__img" src="./img/jpg/menu 1.jpg" alt="">
+                <div class="item__about">
+                  <div class="item__about-desc">
+                    <h2 class="item__about-name">Ягненок</h2>
+                    <span class="item__about-weight">Вес: 225 г</span>
+                  </div>
+                  <p class="item__about-text">
+                    Фаршированный гречневой кашей, курагой, апельсином и зеленым яблоком
+                  </p>
+                  <div class="item__about-basket">
+                    <button class="item__about-btn"><img src="./img/svg/1.svg" alt=""></button>
+                    <h2 class="item__about-price">450 ₽</h2>
+                    <button class="item__about-btn"><img src="./img/svg/plus.svg" alt=""></button>
+                  </div>
+                </div>
               </div>
-              <p class="item__about-text">
-                Фаршированный гречневой кашей, курагой, апельсином и зеленым яблоком
-              </p>
-              <div class="item__about-basket">
-                <button class="item__about-btn"><img src="./img/svg/1.svg" alt=""></button>
-                <h2 class="item__about-price">450 ₽</h2>
-                <button class="item__about-btn"><img src="./img/svg/plus.svg" alt=""></button>
+              <div class="item__items swiper-slide">
+                <img class="item__img" src="./img/jpg/menu 1.jpg" alt="">
+                <div class="item__about">
+                  <div class="item__about-desc">
+                    <h2 class="item__about-name">Ягненок</h2>
+                    <span class="item__about-weight">Вес: 225 г</span>
+                  </div>
+                  <p class="item__about-text">
+                    Фаршированный гречневой кашей, курагой, апельсином и зеленым яблоком
+                  </p>
+                  <div class="item__about-basket">
+                    <button class="item__about-btn"><img src="./img/svg/1.svg" alt=""></button>
+                    <h2 class="item__about-price">450 ₽</h2>
+                    <button class="item__about-btn"><img src="./img/svg/plus.svg" alt=""></button>
+                  </div>
+                </div>
+              </div>
+              <div class="item__items swiper-slide">
+                <img class="item__img" src="./img/jpg/menu 1.jpg" alt="">
+                <div class="item__about">
+                  <div class="item__about-desc">
+                    <h2 class="item__about-name">Ягненок</h2>
+                    <span class="item__about-weight">Вес: 225 г</span>
+                  </div>
+                  <p class="item__about-text">
+                    Фаршированный гречневой кашей, курагой, апельсином и зеленым яблоком
+                  </p>
+                  <div class="item__about-basket">
+                    <button class="item__about-btn"><img src="./img/svg/1.svg" alt=""></button>
+                    <h2 class="item__about-price">450 ₽</h2>
+                    <button class="item__about-btn"><img src="./img/svg/plus.svg" alt=""></button>
+                  </div>
+                </div>
+              </div>
+              <div class="item__items swiper-slide">
+                <img class="item__img" src="./img/jpg/menu 1.jpg" alt="">
+                <div class="item__about">
+                  <div class="item__about-desc">
+                    <h2 class="item__about-name">Ягненок</h2>
+                    <span class="item__about-weight">Вес: 225 г</span>
+                  </div>
+                  <p class="item__about-text">
+                    Фаршированный гречневой кашей, курагой, апельсином и зеленым яблоком
+                  </p>
+                  <div class="item__about-basket">
+                    <button class="item__about-btn"><img src="./img/svg/1.svg" alt=""></button>
+                    <h2 class="item__about-price">450 ₽</h2>
+                    <button class="item__about-btn"><img src="./img/svg/plus.svg" alt=""></button>
+                  </div>
+                </div>
+              </div>
+              <div class="item__items swiper-slide">
+                <img class="item__img" src="./img/jpg/menu 1.jpg" alt="">
+                <div class="item__about">
+                  <div class="item__about-desc">
+                    <h2 class="item__about-name">Ягненок</h2>
+                    <span class="item__about-weight">Вес: 225 г</span>
+                  </div>
+                  <p class="item__about-text">
+                    Фаршированный гречневой кашей, курагой, апельсином и зеленым яблоком
+                  </p>
+                  <div class="item__about-basket">
+                    <button class="item__about-btn"><img src="./img/svg/1.svg" alt=""></button>
+                    <h2 class="item__about-price">450 ₽</h2>
+                    <button class="item__about-btn"><img src="./img/svg/plus.svg" alt=""></button>
+                  </div>
+                </div>
+              </div>
+              <div class="item__items swiper-slide">
+                <img class="item__img" src="./img/jpg/menu 1.jpg" alt="">
+                <div class="item__about">
+                  <div class="item__about-desc">
+                    <h2 class="item__about-name">Ягненок</h2>
+                    <span class="item__about-weight">Вес: 225 г</span>
+                  </div>
+                  <p class="item__about-text">
+                    Фаршированный гречневой кашей, курагой, апельсином и зеленым яблоком
+                  </p>
+                  <div class="item__about-basket">
+                    <button class="item__about-btn"><img src="./img/svg/1.svg" alt=""></button>
+                    <h2 class="item__about-price">450 ₽</h2>
+                    <button class="item__about-btn"><img src="./img/svg/plus.svg" alt=""></button>
+                  </div>
+                </div>
+              </div>
+              <div class="item__items swiper-slide">
+                <img class="item__img" src="./img/jpg/menu 1.jpg" alt="">
+                <div class="item__about">
+                  <div class="item__about-desc">
+                    <h2 class="item__about-name">Ягненок</h2>
+                    <span class="item__about-weight">Вес: 225 г</span>
+                  </div>
+                  <p class="item__about-text">
+                    Фаршированный гречневой кашей, курагой, апельсином и зеленым яблоком
+                  </p>
+                  <div class="item__about-basket">
+                    <button class="item__about-btn"><img src="./img/svg/1.svg" alt=""></button>
+                    <h2 class="item__about-price">450 ₽</h2>
+                    <button class="item__about-btn"><img src="./img/svg/plus.svg" alt=""></button>
+                  </div>
+                </div>
+              </div>
+              <div class="item__items swiper-slide">
+                <img class="item__img" src="./img/jpg/menu 1.jpg" alt="">
+                <div class="item__about">
+                  <div class="item__about-desc">
+                    <h2 class="item__about-name">Ягненок</h2>
+                    <span class="item__about-weight">Вес: 225 г</span>
+                  </div>
+                  <p class="item__about-text">
+                    Фаршированный гречневой кашей, курагой, апельсином и зеленым яблоком
+                  </p>
+                  <div class="item__about-basket">
+                    <button class="item__about-btn"><img src="./img/svg/1.svg" alt=""></button>
+                    <h2 class="item__about-price">450 ₽</h2>
+                    <button class="item__about-btn"><img src="./img/svg/plus.svg" alt=""></button>
+                  </div>
+                </div>
               </div>
             </div>
+            <div class="swiper-pagination"></div>
           </div>
-          <div class="item__items">
-            <img class="item__img" src="./img/jpg/menu 1.jpg" alt="">
-            <div class="item__about">
-              <div class="item__about-desc">
-                <h2 class="item__about-name">Ягненок</h2>
-                <span class="item__about-weight">Вес: 225 г</span>
+        </div>
+      </div>
+      <div class="item__content">
+        <div class="item__title">ХОЛОДНЫЕ ЗАКУСКИ</div>
+        <div class="item__type">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="item__items swiper-slide">
+                <img class="item__img" src="./img/jpg/menu 1.jpg" alt="">
+                <div class="item__about">
+                  <div class="item__about-desc">
+                    <h2 class="item__about-name">Ягненок</h2>
+                    <span class="item__about-weight">Вес: 225 г</span>
+                  </div>
+                  <p class="item__about-text">
+                    Фаршированный гречневой кашей, курагой, апельсином и зеленым яблоком
+                  </p>
+                  <div class="item__about-basket">
+                    <button class="item__about-btn"><img src="./img/svg/1.svg" alt=""></button>
+                    <h2 class="item__about-price">450 ₽</h2>
+                    <button class="item__about-btn"><img src="./img/svg/plus.svg" alt=""></button>
+                  </div>
+                </div>
               </div>
-              <p class="item__about-text">
-                Фаршированный гречневой кашей, курагой, апельсином и зеленым яблоком
-              </p>
-              <div class="item__about-basket">
-                <button class="item__about-btn"><img src="./img/svg/1.svg" alt=""></button>
-                <h2 class="item__about-price">450 ₽</h2>
-                <button class="item__about-btn"><img src="./img/svg/plus.svg" alt=""></button>
+              <div class="item__items swiper-slide">
+                <img class="item__img" src="./img/jpg/menu 1.jpg" alt="">
+                <div class="item__about">
+                  <div class="item__about-desc">
+                    <h2 class="item__about-name">Ягненок</h2>
+                    <span class="item__about-weight">Вес: 225 г</span>
+                  </div>
+                  <p class="item__about-text">
+                    Фаршированный гречневой кашей, курагой, апельсином и зеленым яблоком
+                  </p>
+                  <div class="item__about-basket">
+                    <button class="item__about-btn"><img src="./img/svg/1.svg" alt=""></button>
+                    <h2 class="item__about-price">450 ₽</h2>
+                    <button class="item__about-btn"><img src="./img/svg/plus.svg" alt=""></button>
+                  </div>
+                </div>
+              </div>
+              <div class="item__items swiper-slide">
+                <img class="item__img" src="./img/jpg/menu 1.jpg" alt="">
+                <div class="item__about">
+                  <div class="item__about-desc">
+                    <h2 class="item__about-name">Ягненок</h2>
+                    <span class="item__about-weight">Вес: 225 г</span>
+                  </div>
+                  <p class="item__about-text">
+                    Фаршированный гречневой кашей, курагой, апельсином и зеленым яблоком
+                  </p>
+                  <div class="item__about-basket">
+                    <button class="item__about-btn"><img src="./img/svg/1.svg" alt=""></button>
+                    <h2 class="item__about-price">450 ₽</h2>
+                    <button class="item__about-btn"><img src="./img/svg/plus.svg" alt=""></button>
+                  </div>
+                </div>
+              </div>
+              <div class="item__items swiper-slide">
+                <img class="item__img" src="./img/jpg/menu 1.jpg" alt="">
+                <div class="item__about">
+                  <div class="item__about-desc">
+                    <h2 class="item__about-name">Ягненок</h2>
+                    <span class="item__about-weight">Вес: 225 г</span>
+                  </div>
+                  <p class="item__about-text">
+                    Фаршированный гречневой кашей, курагой, апельсином и зеленым яблоком
+                  </p>
+                  <div class="item__about-basket">
+                    <button class="item__about-btn"><img src="./img/svg/1.svg" alt=""></button>
+                    <h2 class="item__about-price">450 ₽</h2>
+                    <button class="item__about-btn"><img src="./img/svg/plus.svg" alt=""></button>
+                  </div>
+                </div>
+              </div>
+              <div class="item__items swiper-slide">
+                <img class="item__img" src="./img/jpg/menu 1.jpg" alt="">
+                <div class="item__about">
+                  <div class="item__about-desc">
+                    <h2 class="item__about-name">Ягненок</h2>
+                    <span class="item__about-weight">Вес: 225 г</span>
+                  </div>
+                  <p class="item__about-text">
+                    Фаршированный гречневой кашей, курагой, апельсином и зеленым яблоком
+                  </p>
+                  <div class="item__about-basket">
+                    <button class="item__about-btn"><img src="./img/svg/1.svg" alt=""></button>
+                    <h2 class="item__about-price">450 ₽</h2>
+                    <button class="item__about-btn"><img src="./img/svg/plus.svg" alt=""></button>
+                  </div>
+                </div>
+              </div>
+              <div class="item__items swiper-slide">
+                <img class="item__img" src="./img/jpg/menu 1.jpg" alt="">
+                <div class="item__about">
+                  <div class="item__about-desc">
+                    <h2 class="item__about-name">Ягненок</h2>
+                    <span class="item__about-weight">Вес: 225 г</span>
+                  </div>
+                  <p class="item__about-text">
+                    Фаршированный гречневой кашей, курагой, апельсином и зеленым яблоком
+                  </p>
+                  <div class="item__about-basket">
+                    <button class="item__about-btn"><img src="./img/svg/1.svg" alt=""></button>
+                    <h2 class="item__about-price">450 ₽</h2>
+                    <button class="item__about-btn"><img src="./img/svg/plus.svg" alt=""></button>
+                  </div>
+                </div>
+              </div>
+              <div class="item__items swiper-slide">
+                <img class="item__img" src="./img/jpg/menu 1.jpg" alt="">
+                <div class="item__about">
+                  <div class="item__about-desc">
+                    <h2 class="item__about-name">Ягненок</h2>
+                    <span class="item__about-weight">Вес: 225 г</span>
+                  </div>
+                  <p class="item__about-text">
+                    Фаршированный гречневой кашей, курагой, апельсином и зеленым яблоком
+                  </p>
+                  <div class="item__about-basket">
+                    <button class="item__about-btn"><img src="./img/svg/1.svg" alt=""></button>
+                    <h2 class="item__about-price">450 ₽</h2>
+                    <button class="item__about-btn"><img src="./img/svg/plus.svg" alt=""></button>
+                  </div>
+                </div>
+              </div>
+              <div class="item__items swiper-slide">
+                <img class="item__img" src="./img/jpg/menu 1.jpg" alt="">
+                <div class="item__about">
+                  <div class="item__about-desc">
+                    <h2 class="item__about-name">Ягненок</h2>
+                    <span class="item__about-weight">Вес: 225 г</span>
+                  </div>
+                  <p class="item__about-text">
+                    Фаршированный гречневой кашей, курагой, апельсином и зеленым яблоком
+                  </p>
+                  <div class="item__about-basket">
+                    <button class="item__about-btn"><img src="./img/svg/1.svg" alt=""></button>
+                    <h2 class="item__about-price">450 ₽</h2>
+                    <button class="item__about-btn"><img src="./img/svg/plus.svg" alt=""></button>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="item__items">
-            <img class="item__img" src="./img/jpg/menu 1.jpg" alt="">
-            <div class="item__about">
-              <div class="item__about-desc">
-                <h2 class="item__about-name">Ягненок</h2>
-                <span class="item__about-weight">Вес: 225 г</span>
-              </div>
-              <p class="item__about-text">
-                Фаршированный гречневой кашей, курагой, апельсином и зеленым яблоком
-              </p>
-              <div class="item__about-basket">
-                <button class="item__about-btn"><img src="./img/svg/1.svg" alt=""></button>
-                <h2 class="item__about-price">450 ₽</h2>
-                <button class="item__about-btn"><img src="./img/svg/plus.svg" alt=""></button>
-              </div>
-            </div>
+            <div class="swiper-pagination"></div>
           </div>
         </div>
       </div>
     </div>
-
   </section>
+  <section class="block">
+    <div class="container">
+        <div class="block__content">
+            <h1 class="block__title">КОНТАКТЫ</h1>
+            <div class="block__info">
+                <img src="./img/svg/Location1.svg" alt="" class="block__img">
+                <a href="#" class="block__link"><span class="block__adress">Наш адрес:</span>
+                    МО, городской округ Красногорск, село Ильинкое, 
+                    Экспериментальная улица, 10</a>
+            </div>
+            <div class="block__info block__info-two">
+                <img src="./img/svg/Message.svg" alt="" class="block__img">
+                <a href="#" class="block__link"><span class="block__adress">Наша почта:</span>
+                    auto.wash@gmail.com</a>
+            </div>
+            <div class="block__contact">
+                <button class="block__btn">ЗАБРОНИРОВАТЬ СТОЛ</button>
+                <a href="#" class="block__link">+7 (917) 510-57-59<span class="block__adress">Звоните или оставляйте заявку</span></a>
+            </div>
+            <div class="block-site">
+                <h3 class="block-site__title">Мы в соц сетях:</h3>
+                <div class="block-site__www">
+                <a href=""><img src="./img/svg/facebook.svg" alt="" class="block-site__img"></a>
+                <a href=""><img src="./img/svg/vector2.svg" alt="" class="block-site__img"></a>
+                <a href=""><img src="./img/svg/youtube.svg" alt="" class="block-site__img"></a>
+                <a href=""><img src="./img/svg/instagram.svg" alt="" class="block-site__img"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="block-map">  
+        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A231d9769ebe50b534b649a7a204e318a1d805ebdfbff64e2807c4a387882f63b&amp;source=constructor" width="100%" height="500" frameborder="0"></iframe>
+      </div>
+</section>
 </main>
 <footer class="footer">
   <div class="container">
@@ -328,5 +879,19 @@
     </div>
   </div>
 </footer>
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </body>
 </html>
+
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    freeMode: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
+</script>
