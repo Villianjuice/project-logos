@@ -81,3 +81,11 @@ body{
     max-width: 763px;
     margin: 0 auto;
 }
+
+.ymaps-layers-pane {
+  -ms-filter: invert(75%) grayscale(1) brightness(0.75);
+  -webkit-filter: invert(75%) grayscale(1) brightness(0.75);
+  -moz-filter: invert(75%) grayscale(1) brightness(0.75);
+  -o-filter: invert(75%) grayscale(1) brightness(0.75);
+  filter: invert(75%) grayscale(1) brightness(0.75);
+}
