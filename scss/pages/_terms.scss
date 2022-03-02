@@ -1,12 +1,8 @@
 .terms{
-    &-map img{
-        width: 639px;
-        height: 610px;
-        margin-left: 20px;
-        margin-bottom: 30px;
-    }
+    margin-bottom: 40px;
     &-content{
         display: flex;
+        gap: 20px;
     }
     &-item{
         margin-bottom: 15px;
@@ -53,28 +49,44 @@
     
 }
 .accordion {
-    background: linear-gradient(114.93deg, #618967 5.11%, #72A479 94%);
-    border-radius: 10px;
-    color: $text-white;
-    cursor: pointer;
-    padding: 18px 0 18px 30px;
-    width: 618px;
-    text-align: left;
-    border: none;
-    outline: none;
-    transition: 0.4s;
+    &-panel{
+        margin-bottom: 10px;
+        background: linear-gradient(90deg, #494544 0%, #504B4A 100%);
+        border-radius: 10px;
+    }
+    &-body{
+        @include font(400, 16px);
+        color: $text-white;
+        line-height: 25px;
+        padding: 60px 40px 60px 30px;
+        width: 618px;
+        background: linear-gradient(90deg, #494544 0%, #504B4A 100%);
+        border-radius: 0 0 10px 10px;
+        display: none;
+        overflow: hidden;
+    }
+    &-header{
+        @include font(500, 18px);
+        color: $text-white;
+        cursor: pointer;
+        background: linear-gradient(114.93deg, #618967 5.11%, #72A479 94%);
+        border-radius: 10px;
+        padding: 18px 0 18px 30px;
+        width: 618px;
+        text-align: left;
+        border: none;
+        outline: none;
+        transition: 0.4s;
+    }
+  }
+  .accordion-panel > .accordion-body {
+    display: none;
+  }
+  
+  .accordion-panel.accordion-expanded > .accordion-body {
+    display: block;
   }
 
-  
-  /* Style the accordion panel. Note: hidden by default */
-  .panel {
-    padding: 60px 40px 60px 30px;
-    width: 618px;
-    background: linear-gradient(90deg, #494544 0%, #504B4A 100%);
-    border-radius: 0 0 10px 10px;
-    display: none;
-    overflow: hidden;
-  }
 
 .time{
     &__title{
