@@ -1,12 +1,8 @@
 .terms{
     margin-bottom: 40px;
     &-content{
-<<<<<<< HEAD
         display: grid;
         grid-template-columns: 618px 640px;
-=======
-        display: flex;
->>>>>>> 95196bd66574aa62f7fbbd7ae67928f0b5f7843f
         gap: 20px;
     }
     &-item{
@@ -63,12 +59,7 @@
         @include font(400, 16px);
         color: $text-white;
         line-height: 25px;
-<<<<<<< HEAD
         padding: 60px 40px 60px 30px;;
-=======
-        padding: 60px 40px 60px 30px;
-        width: 618px;
->>>>>>> 95196bd66574aa62f7fbbd7ae67928f0b5f7843f
         background: linear-gradient(90deg, #494544 0%, #504B4A 100%);
         border-radius: 0 0 10px 10px;
         display: none;
@@ -81,10 +72,7 @@
         background: linear-gradient(114.93deg, #618967 5.11%, #72A479 94%);
         border-radius: 10px;
         padding: 18px 0 18px 30px;
-<<<<<<< HEAD
-=======
         width: 618px;
->>>>>>> 95196bd66574aa62f7fbbd7ae67928f0b5f7843f
         text-align: left;
         border: none;
         outline: none;

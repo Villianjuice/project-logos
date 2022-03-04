@@ -9,6 +9,7 @@
 @import'./section/footer';
 @import './section/block';
 @import './section/rec';
+@import './section/about';
 
 @import'./pages/delivery';
 @import'./pages/terms';
@@ -44,13 +45,10 @@ body{
     max-width: 763px;
     margin: 0 auto;
 }
-<<<<<<< HEAD
-=======
+
 .swiper{
     padding-bottom: 50px;
 }
->>>>>>> 95196bd66574aa62f7fbbd7ae67928f0b5f7843f
-
 .ymaps-layers-pane {
   -ms-filter: invert(75%) grayscale(1) brightness(0.75);
   -webkit-filter: invert(75%) grayscale(1) brightness(0.75);
