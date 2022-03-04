@@ -1014,9 +1014,10 @@ button {
 }
 
 .terms-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 618px 640px;
+      grid-template-columns: 618px 640px;
   gap: 20px;
 }
 
@@ -1099,7 +1100,6 @@ button {
   color: #FFFFFF;
   line-height: 25px;
   padding: 60px 40px 60px 30px;
-  width: 618px;
   background: -webkit-gradient(linear, left top, right top, from(#494544), to(#504B4A));
   background: linear-gradient(90deg, #494544 0%, #504B4A 100%);
   border-radius: 0 0 10px 10px;
@@ -1118,7 +1118,6 @@ button {
   background: linear-gradient(114.93deg, #618967 5.11%, #72A479 94%);
   border-radius: 10px;
   padding: 18px 0 18px 30px;
-  width: 618px;
   text-align: left;
   border: none;
   outline: none;
