@@ -14,8 +14,8 @@
       margin-bottom: 40px;
     }
     &__info{
-      width: 117px;
-      height: 86px;
+      max-width: 117px;
+      min-height: 86px;
       margin-right: 30px;
     }
     &__title{
@@ -35,6 +35,13 @@
      line-height: 22px;
      color: $text-white;
      margin: 0 120px 0 100px;
+    }
+    &__item{
+      align-items: center;
+      display: flex;
+    }
+    &__items{
+      display: flex;
     }
   }
   &__title{
@@ -82,6 +89,7 @@
 
 .units{
   display: flex;
+  align-items: center;
   &__btn{
     width: 26px;
     height: 26px;
@@ -121,8 +129,8 @@
     }
     &__img{
       border-radius: 10px;
-      width: 225px;
-      height: 120px;
+      max-width: 225px;
+      max-height: 120px;
       margin-bottom: 10px;
     }
     &__title{

@@ -30,9 +30,10 @@
         max-width: 1365px;
     }
 }
-body{
+html,body{
   background: linear-gradient(360deg, #211F20 0%, #44403F 100%);
   color: $text-white;
+  overflow-x: hidden;
 }
 
 
@@ -55,4 +56,894 @@ body{
   -moz-filter: invert(75%) grayscale(1) brightness(0.75);
   -o-filter: invert(75%) grayscale(1) brightness(0.75);
   filter: invert(75%) grayscale(1) brightness(0.75);
+}
+
+@media screen and (max-width: 394px) {
+    .container{
+        padding: 0 10px;
+    }
+    .header__content{
+        display: none;
+    }
+    .header-label{
+        margin-bottom: -18px;
+    }
+    .hero{
+        background-image: url(../../img/png/bg.png);
+        min-height: 296px;
+    }
+    .menu{
+        display: none;
+    }
+    .item__title{
+        @include font(700, 20px);
+        line-height: 24px;
+    }
+    .block{
+        &__content{
+            margin-top: 30px;
+            padding: 25px 15px;
+            max-width: 355px;
+        }
+        &__contact{
+            flex-direction: column;
+        }
+        &__title{
+            text-align: center;
+        }
+    }
+    .about{
+        display: none;
+    }
+    .terms{
+        &-content{
+            display: grid;
+            grid-template-columns: 350px;
+            gap: 20px;
+        }
+        &-map{
+            width: 350px;
+            height: 350px;
+        }
+        &__title{
+            @include font(700, 20px);
+            line-height: 24px;
+        }
+    }
+    .time-content{
+        flex-direction: column;
+    }
+    .footer__nav{
+        display: none;
+    }
+    .cart{
+        &__title{
+            @include font (700, 20px);
+            line-height: 24px;
+            margin-bottom: 25px;
+        }
+        &__link{
+            margin-top: -20px;
+        }
+        &__subtitle{
+            @include font (500, 12px);
+            line-height: 14px;
+        }
+        &-item{
+            width: 350px;
+            &__items{
+                flex-direction: column;
+            }
+            &__text{
+                display: none;
+            }
+            &__title{
+                @include font(700, 16px);
+               line-height: 19px;
+               width: 145px;
+               margin-bottom: 10px;
+            }
+            &__info{
+                width: 111px;
+                height: 82px;
+                margin-right: 18px;
+            }
+            &__price{
+                @include font(700, 12px);
+               line-height: 15px;
+                margin: 0 10px;
+            }
+        }
+    }
+    .units__number{
+        @include font(700, 12px);
+        line-height: 15px;
+    }
+    .order{
+        &-items{
+            flex-direction: column;
+        }
+        &-item{
+            display: flex;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+            gap: 18px;
+            &__img{
+                width: 111px;
+                height: 82px;
+            }
+        }
+    }
+    .total{
+        text-align: center;
+        &__content{
+            flex-direction: column;
+        }
+        &__total{
+            margin: 0;
+        }
+    }
+    .item-title__title{
+        margin-left: 10px;
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .card{
+        &__item{
+            flex-direction: column;
+        }
+        img{
+            display: block;
+            border-radius: 0;
+        }
+        &__info{
+            text-align: center;
+            margin: 0;
+            padding: 23px 55px;
+        }
+        &__text{
+            margin: 0 0 15px 0;
+        }
+        &__weight{
+            margin: 0 0 22px 0;
+        }
+        &__price{
+            margin-left: 50px;
+        }
+    }
+}
+
+@media screen and (width: 390px) {
+    .container{
+        padding: 0 10px;
+    }
+    .header__content{
+        display: none;
+    }
+    .hero{
+        background-image: url(../../img/png/bg.png);
+        min-height: 296px;
+    }
+    .menu{
+        display: none;
+    }
+    .item__title{
+        @include font(700, 20px);
+        line-height: 24px;
+    }
+    .block{
+        &__content{
+            margin-top: 30px;
+            padding: 25px 15px;
+            max-width: 355px;
+        }
+        &__contact{
+            flex-direction: column;
+        }
+        &__title{
+            text-align: center;
+        }
+    }
+    .terms{
+        &-content{
+            display: grid;
+            grid-template-columns: 370px;
+            gap: 20px;
+        }
+        &-map{
+            width: 370px;
+            height: 370px;
+        }
+        &__title{
+            @include font(700, 20px);
+            line-height: 24px;
+        }
+    }
+    .time-content{
+        flex-direction: column;
+    }
+    .footer__nav{
+        display: none;
+    }
+    .cart{
+        &-item{
+            width: 365px;
+        }
+    }
+}
+
+@media screen and (width: 412px) {
+    .container{
+        padding: 0 10px;
+    }
+    .header-label{
+        margin-bottom: -18px;
+    }
+    .header__content{
+        display: none;
+    }
+    .hero{
+        background-image: url(../../img/png/bg.png);
+        min-height: 296px;
+    }
+    .menu{
+        display: none;
+    }
+    .item__title{
+        @include font(700, 20px);
+        line-height: 24px;
+    }
+    .block{
+        &__content{
+            margin-top: 30px;
+            padding: 25px 15px;
+            max-width: 390px;
+        }
+        &__contact{
+            flex-direction: column;
+        }
+        &__title{
+            text-align: center;
+        }
+    }
+    .about{
+        display: none;
+    }
+    .terms{
+        &-content{
+            display: grid;
+            grid-template-columns: 392px;
+            gap: 20px;
+        }
+        &-map{
+            width: 392px;
+            height: 392px;
+        }
+        &__title{
+            @include font(700, 20px);
+            line-height: 24px;
+        }
+    }
+    .time-content{
+        flex-direction: column;
+    }
+    .footer__nav{
+        display: none;
+    }
+    .cart{
+        &__title{
+            @include font (700, 20px);
+            line-height: 24px;
+            margin-bottom: 25px;
+        }
+        &__link{
+            margin-top: -20px;
+        }
+        &__subtitle{
+            @include font (500, 12px);
+            line-height: 14px;
+        }
+        &-item{
+            width: 385px;
+            &__items{
+                flex-direction: column;
+            }
+            &__text{
+                display: none;
+            }
+            &__title{
+                @include font(700, 16px);
+               line-height: 19px;
+               width: 180px;
+               margin-bottom: 15px;
+            }
+            &__info{
+                width: 135px;
+                height: 90px;
+                margin-right: 18px;
+            }
+            &__price{
+                @include font(700, 14px);
+               line-height: 15px;
+                margin: 0 10px;
+            }
+        }
+    }
+    .units__number{
+        @include font(700, 14px);
+        line-height: 15px;
+    }
+    .order{
+        &-items{
+            flex-direction: column;
+        }
+        &-item{
+            display: flex;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+            gap: 18px;
+            &__img{
+                width: 135px;
+                height: 90px;
+            }
+            &__title{
+                width: 180px;
+                @include font(700, 15px);
+               line-height: 17px;
+            }
+        }
+    }
+    .total{
+        text-align: center;
+        &__content{
+            flex-direction: column;
+        }
+        &__total{
+            margin: 0;
+        }
+    }
+    .item-title__title{
+        margin-left: 10px;
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .card{
+        &__item{
+            flex-direction: column;
+        }
+        img{
+            display: block;
+            border-radius: 0;
+        }
+        &__info{
+            text-align: center;
+            margin: 0;
+            padding: 23px 55px;
+        }
+        &__text{
+            margin: 0 0 15px 0;
+        }
+        &__weight{
+            margin: 0 0 22px 0;
+        }
+        &__cart{
+            gap: 70px;
+            justify-content: center;
+        }
+    }
+}
+
+@media screen and (width: 414px) {
+    .header__content{
+        display: none;
+    }
+    .header-label{
+        margin-bottom: -18px;
+    }
+    .hero{
+        background-image: url(../../img/png/bg.png);
+        min-height: 350px;
+    }
+    .menu{
+        display: none;
+    }
+    .item__title{
+        @include font(700, 24px);
+        line-height: 24px;
+    }
+    .about{
+        display: none;
+    }
+    .block{
+        &__content{
+            margin-top: 40px;
+            width: 385px;
+        }
+        &__contact{
+            flex-direction: column;
+        }
+        &__title{
+            text-align: center;
+        }
+    }
+    .footer__nav{
+        display: none;
+    }
+    .terms{
+        &-content{
+            display: grid;
+            grid-template-columns: 385px;
+            gap: 20px;
+        }
+        &-map{
+            width: 385px;
+            height: 385px;
+        }
+        &__title{
+            @include font(700, 20px);
+            line-height: 24px;
+        }
+    }
+    .time-content{
+        flex-direction: column;
+    }
+    .cart{
+        &__title{
+            @include font (700, 20px);
+            line-height: 24px;
+            margin-bottom: 25px;
+        }
+        &__link{
+            margin-top: -20px;
+        }
+        &__subtitle{
+            @include font (500, 12px);
+            line-height: 14px;
+        }
+        &-item{
+            width: 385px;
+            &__items{
+                flex-direction: column;
+            }
+            &__text{
+                display: none;
+            }
+            &__title{
+                @include font(700, 16px);
+               line-height: 19px;
+               width: 180px;
+               margin-bottom: 15px;
+            }
+            &__info{
+                width: 135px;
+                height: 90px;
+                margin-right: 18px;
+            }
+            &__price{
+                @include font(700, 14px);
+               line-height: 15px;
+                margin: 0 10px;
+            }
+        }
+    }
+    .units__number{
+        @include font(700, 14px);
+        line-height: 15px;
+    }
+    .order{
+        &-items{
+            flex-direction: column;
+        }
+        &-item{
+            display: flex;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+            gap: 18px;
+            &__img{
+                width: 135px;
+                height: 90px;
+            }
+            &__title{
+                width: 180px;
+                @include font(700, 15px);
+               line-height: 17px;
+            }
+        }
+    }
+    .total{
+        text-align: center;
+        &__content{
+            flex-direction: column;
+        }
+        &__total{
+            margin: 0;
+        }
+    }
+    .item-title__title{
+        margin-left: 10px;
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .card{
+        &__item{
+            flex-direction: column;
+        }
+        img{
+            display: block;
+            border-radius: 0;
+        }
+        &__info{
+            text-align: center;
+            margin: 0;
+            padding: 23px 55px;
+        }
+        &__text{
+            margin: 0 0 15px 0;
+        }
+        &__weight{
+            margin: 0 0 22px 0;
+        }
+        &__cart{
+            gap: 70px;
+            justify-content: center;
+        }
+    }
+}
+
+@media screen and (width: 768px) {
+    .header__content{
+        display: none;
+    }
+    .hero{
+        background-image: url(../../img/png/bg.png);
+        min-height: 380px;
+    }
+    .about{
+        &-content{
+            display: grid;
+            grid-template-columns: 670px;
+            padding: 40px;
+        }
+        &-items{
+            display: grid;
+            grid-template-columns: 320px 320px;
+            gap: 20px;
+        }
+    }
+    .footer__nav{
+        display: none;
+    }
+    .menu{
+        display: none;
+    }
+    .terms{
+        padding-left: 60px;
+        &-content{
+            display: grid;
+            grid-template-columns: 620px;
+            gap: 20px;
+        }
+        &-map{
+            width: 620px;
+            height: 620px;
+        }
+        &__title{
+            @include font(700, 24px);
+            line-height: 25px;
+        }
+    }
+    .time{
+        padding-left: 60px;
+    }
+    .cart{
+        &__title{
+            @include font (700, 20px);
+            line-height: 24px;
+            margin-bottom: 25px;
+        }
+        &__link{
+            margin-top: -20px;
+        }
+        &__subtitle{
+            @include font (500, 12px);
+            line-height: 14px;
+        }
+        &-item{
+            width: 740px;
+            &__text{
+                display: none;
+            }
+            &__title{
+                @include font(700, 16px);
+               line-height: 19px;
+               width: 250px;
+            }
+            &__price{
+                margin: 0 50px;
+            }
+        }
+    }
+    .order{
+        &-items{
+            flex-direction: column;
+        }
+        &-item{
+            display: flex;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+            gap: 18px;
+            &__title{
+                width: 300px;
+                @include font(700, 25px);
+               line-height: 30px;
+            }
+        }
+    }
+    .card{
+        &__img{
+            width: 360px;
+            height: 250px;
+        }
+        &__text{
+            margin: 10px 0 0 0;
+        }
+        &__weight{
+            margin: 15px 0 15px 0;
+        }
+    }
+}
+
+@media screen and (width: 820px) {
+    .header__content{
+        display: none;
+    }
+    .hero{
+        background-image: url(../../img/png/bg.png);
+        min-height: 400px;
+    }
+    .about{
+        &-content{
+            display: grid;
+            grid-template-columns: 700px;
+            padding: 50px;
+        }
+        &-items{
+            display: grid;
+            grid-template-columns: 335px 335px;
+            gap: 20px;
+        }
+    }
+    .footer__nav{
+        display: none;
+    }
+    .menu{
+        display: none;
+    }
+    .terms{
+        padding-left: 80px;
+        &-content{
+            display: grid;
+            grid-template-columns: 620px;
+            gap: 20px;
+        }
+        &-map{
+            width: 620px;
+            height: 620px;
+        }
+        &__title{
+            @include font(700, 25px);
+            line-height: 27px;
+        }
+    }
+    .time{
+        padding-left: 80px;
+    }
+    .cart{
+        &__title{
+            @include font (700, 20px);
+            line-height: 24px;
+            margin-bottom: 25px;
+        }
+        &__link{
+            margin-top: -20px;
+        }
+        &__subtitle{
+            @include font (500, 12px);
+            line-height: 14px;
+        }
+        &-item{
+            width: 790px;
+            &__text{
+                display: none;
+            }
+            &__title{
+                @include font(700, 20px);
+               line-height: 24px;
+               width: 250px;
+            }
+            &__price{
+                margin: 0 50px;
+            }
+        }
+    }
+  .order{
+        &-items{
+            flex-direction: column;
+        }
+        &-item{
+            display: flex;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+            gap: 50px;
+            &__title{
+                width: 300px;
+                @include font(700, 25px);
+               line-height: 30px;
+            }
+        }
+    }
+    .card{
+        &__img{
+            width: 360px;
+            height: 250px;
+        }
+        &__text{
+            margin: 10px 0 0 0;
+        }
+        &__weight{
+            margin: 15px 0 15px 0;
+        }
+    }
+}
+
+@media screen and (width: 912px) {
+    .header__content{
+        display: none;
+    }
+    .hero{
+        background-image: url(../../img/png/bg.png);
+        min-height: 420px;
+    }
+    .menu{
+        display: none;
+    }
+    .about{
+        &-content{
+            display: grid;
+            grid-template-columns: 760px;
+            padding: 60px;
+        }
+        &-items{
+            display: grid;
+            grid-template-columns: 360px 360px;
+            gap: 30px;
+        }
+    }
+    .footer__nav{
+        display: none;
+    }
+    .terms{
+        padding-left: 20px;
+        &-content{
+            display: grid;
+            grid-template-columns: 850px;
+        }
+        &-map{
+            width: 850px;
+            height: 450px;
+        }
+        &__title{
+            @include font(700, 27px);
+            line-height: 29px;
+        }
+    }
+    .time{
+        padding-left: 80px;
+    }
+    .cart{
+        &-item{
+            width: 880px;
+            &__title{
+                @include font(700, 20px);
+               line-height: 24px;
+               width: 200px;
+            }
+            &__price{
+                margin: 0 20px;
+            }
+        }
+    }
+    .order{
+        &-items{
+            flex-direction: column;
+        }
+        &-item{
+            display: flex;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+            gap: 18px;
+            &__title{
+                width: 300px;
+                @include font(700, 25px);
+               line-height: 30px;
+            }
+        }
+    }
+    .card{
+        &__img{
+            width: 450px;
+            height: 300px;
+        }
+        &__text{
+            margin: 15px 0 15px 0;
+        }
+        &__weight{
+            margin: 0 0 15px 0;
+        }
+    }
+}
+
+@media screen and (width: 1024px) {
+    .header__content{
+        display: none;
+    }
+    .hero{
+        background-image: url(../../img/png/bg.png);
+        min-height: 420px;
+        &__content{
+            margin-top: 50px;
+            max-width: 700px;
+        }
+        &__title{
+            font-size: 40px;
+        }
+    }
+    .menu{
+        display: none;
+    }
+    .about{
+        &-content{
+            display: grid;
+            grid-template-columns: 880px;
+            padding: 60px;
+            text-align: center;
+        }
+        &-items{
+            display: grid;
+            grid-template-columns: 360px 360px;
+            gap: 30px;
+            justify-content: center;
+        }
+    }
+    .footer__nav{
+        display: none;
+    }
+    .terms{
+        padding-left: 70px;
+        &-content{
+            display: grid;
+            grid-template-columns: 850px;
+        }
+        &-map{
+            width: 850px;
+            height: 450px;
+        }
+        &__title{
+            @include font(700, 27px);
+            line-height: 29px;
+        }
+    }
+    .time{
+        padding-left: 150px;
+    }
+}
+
+@media screen and (width: 1280px) {
+    .container{
+        padding: 0 15px;
+    }
+    .header-small{
+        display: none;
+    }
+    .hero__content{
+        display: none;
+    }
+    .terms-map{
+        width: 610px;
+        height: 620px;
+    }
 }

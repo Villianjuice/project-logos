@@ -26,7 +26,9 @@
       }
     }
     &__nav{
-      display: flex;
+      display: grid;
+      grid-template-columns: 200px 250px 200px 200px;
+      gap: 10px;
       align-items: center;
       color: $text-white;
     }

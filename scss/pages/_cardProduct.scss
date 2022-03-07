@@ -27,7 +27,8 @@
         @include font(400, 14px);
         line-height: 16px;
         color: $text-gray;
-        margin: 10px 0 100px 0;
+        width: 400px;
+        margin: 20px 0 40px 0;
     }
     &__weight{
         @include font(400, 14px);
@@ -38,7 +39,9 @@
     }
     &__cart{
         display: flex;
-        align-items: center
+        align-items: center;
+        gap: 30px;
+
     }
     &__basket{
         @include font(600, 14px);
@@ -52,7 +55,6 @@
         @include font(700, 25px);
         line-height: 30px;
         color: $text-white;
-        margin-left: 25px;
     }
     img{
         display: block;

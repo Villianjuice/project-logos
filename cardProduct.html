@@ -35,6 +35,26 @@
                   <div class="header__basket-count">1</div>
                 </a>
             </div>
+
+            <div class="header-small">
+              <div class="header-content">
+                <div class="burger-menu">
+                  <h1 class="header-menu">МЕНЮ</h1>
+                </div>
+                <a href="index.html" class="header__title">LOGOS</a>
+                <a href="#" class="header-basket">
+                  <img class="header-basket__img" src="./img/svg/Buy.svg" alt="basket">
+                  <span class="header-basket__title">корзина</span>
+                </a>
+              </div>
+              <form>
+                <label class="header-label">
+                    <img class="header-location" src="./img/svg/Location.svg" alt="Location">
+                    <input class="header-input" placeholder="Введите адрес доставки" type="text">
+                    <img class="header-search" src="./img/svg/Search.svg" alt="Search">
+                </label>
+            </form>
+            </div>
         </div>
     </header>
 
@@ -76,7 +96,7 @@
             <a href="#" class="card__link"><img src="./img/svg/iconmonstr-angel-left-thin.svg" alt=""> к выбору блюда</a>
             <div class="card__content">
                 <div class="card__item">
-                    <img src="./img/jpg/card.jpg" alt="">
+                    <img class="card__img" src="./img/jpg/card.jpg" alt="">
                     <div class="card__info">
                         <h3 class="card__title">Ягненок</h3>
                         <p class="card__text">помидор, сыр фета, масло подсолнечное, капуста пекинская, 
@@ -95,71 +115,153 @@
     <div class="card__border"></div>
 
     <section class="rec">
-        <div class="container">
-            <div class="item__title">С ЭТИМ ТОВАРОМ ПОКУПАЮТ</div>
-            <div class="rec__content">
-                <div class="rec__item">
-                    <img src="./img/jpg/menu1.jpg" alt="" class="rec__img">
-                    <div class="rec-about">
-                        <div class="rec-about__desc">
-                            <h3 class="rec-about__title">Гусь</h3>
-                            <span class="rec-about__gramm">Вес: 225 г</span>
+        <div class="container container__big">
+            <div class="item__content">
+              <div class="item__title item-title__title">С ЭТИМ ТОВАРОМ ПОКУПАЮТ</div>
+              <div class="item__type">
+                <div class="swiper mySwiper">
+                  <div class="swiper-wrapper">
+                    <div class="item__items swiper-slide">
+                      <img class="item__img" src="./img/jpg/menu 1.jpg" alt="">
+                      <div class="item__about">
+                        <div class="item__about-desc">
+                          <h2 class="item__about-name">Ягненок</h2>
+                          <span class="item__about-weight">Вес: 225 г</span>
                         </div>
-                        <p class="rec-about__text">Фаршированный гречневой кашей, 
-                            курагой, апельсином и зеленым яблоком</p>
-                        <div class="rec-about__basket">
-                            <h3 class="rec-about__price">17 900 ₽</h3>
-                            <button class="rec-basket">В корзину</button>
+                        <p class="item__about-text">
+                          Фаршированный гречневой кашей, курагой, апельсином и зеленым яблоком
+                        </p>
+                        <div class="item__about-basket">
+                          <button class="item__about-btn"><img src="./img/svg/1.svg" alt=""></button>
+                          <h2 class="item__about-price">450 ₽</h2>
+                          <button class="item__about-btn"><img src="./img/svg/plus.svg" alt=""></button>
                         </div>
+                      </div>
                     </div>
-                </div>
-                <div class="rec__item">
-                    <img src="./img/jpg/menu2.jpg" alt="" class="rec__img">
-                    <div class="rec-about">
-                        <div class="rec-about__desc">
-                            <h3 class="rec-about__title">Утка</h3>
-                            <span class="rec-about__gramm">Вес: 225 г</span>
+                    <div class="item__items swiper-slide">
+                      <img class="item__img" src="./img/jpg/menu 1.jpg" alt="">
+                      <div class="item__about">
+                        <div class="item__about-desc">
+                          <h2 class="item__about-name">Ягненок</h2>
+                          <span class="item__about-weight">Вес: 225 г</span>
                         </div>
-                        <p class="rec-about__text">Фаршированный гречневой кашей, 
-                            курагой, апельсином и зеленым яблоком</p>
-                        <div class="rec-about__basket">
-                            <h3 class="rec-about__price">220 ₽</h3>
-                            <button class="rec-basket">В корзину</button>
+                        <p class="item__about-text">
+                          Фаршированный гречневой кашей, курагой, апельсином и зеленым яблоком
+                        </p>
+                        <div class="item__about-basket">
+                          <button class="item__about-btn"><img src="./img/svg/1.svg" alt=""></button>
+                          <h2 class="item__about-price">450 ₽</h2>
+                          <button class="item__about-btn"><img src="./img/svg/plus.svg" alt=""></button>
                         </div>
+                      </div>
                     </div>
-                </div>
-                <div class="rec__item">
-                    <img src="./img/jpg/menu 1.jpg" alt="" class="rec__img">
-                    <div class="rec-about">
-                        <div class="rec-about__desc">
-                            <h3 class="rec-about__title">Ягненок</h3>
-                            <span class="rec-about__gramm">Вес: 225 г</span>
+                    <div class="item__items swiper-slide">
+                      <img class="item__img" src="./img/jpg/menu 1.jpg" alt="">
+                      <div class="item__about">
+                        <div class="item__about-desc">
+                          <h2 class="item__about-name">Ягненок</h2>
+                          <span class="item__about-weight">Вес: 225 г</span>
                         </div>
-                        <p class="rec-about__text">Фаршированный гречневой кашей, 
-                            курагой, апельсином и зеленым яблоком</p>
-                        <div class="rec-about__basket">
-                            <h3 class="rec-about__price">520 ₽</h3>
-                            <button class="rec-basket">В корзину</button>
+                        <p class="item__about-text">
+                          Фаршированный гречневой кашей, курагой, апельсином и зеленым яблоком
+                        </p>
+                        <div class="item__about-basket">
+                          <button class="item__about-btn"><img src="./img/svg/1.svg" alt=""></button>
+                          <h2 class="item__about-price">450 ₽</h2>
+                          <button class="item__about-btn"><img src="./img/svg/plus.svg" alt=""></button>
                         </div>
+                      </div>
                     </div>
-                </div>
-                <div class="rec__item">
-                    <img src="./img/jpg/menu3.jpg" alt="" class="rec__img">
-                    <div class="rec-about">
-                        <div class="rec-about__desc">
-                            <h3 class="rec-about__title">Индейка</h3>
-                            <span class="rec-about__gramm">Вес: 225 г</span>
+                    <div class="item__items swiper-slide">
+                      <img class="item__img" src="./img/jpg/menu 1.jpg" alt="">
+                      <div class="item__about">
+                        <div class="item__about-desc">
+                          <h2 class="item__about-name">Ягненок</h2>
+                          <span class="item__about-weight">Вес: 225 г</span>
                         </div>
-                        <p class="rec-about__text">Фаршированный гречневой кашей, 
-                            курагой, апельсином и зеленым яблоком</p>
-                        <div class="rec-about__basket">
-                            <h3 class="rec-about__price">1 620 ₽</h3>
-                            <button class="rec-basket">В корзину</button>
+                        <p class="item__about-text">
+                          Фаршированный гречневой кашей, курагой, апельсином и зеленым яблоком
+                        </p>
+                        <div class="item__about-basket">
+                          <button class="item__about-btn"><img src="./img/svg/1.svg" alt=""></button>
+                          <h2 class="item__about-price">450 ₽</h2>
+                          <button class="item__about-btn"><img src="./img/svg/plus.svg" alt=""></button>
                         </div>
+                      </div>
                     </div>
+                    <div class="item__items swiper-slide">
+                      <img class="item__img" src="./img/jpg/menu 1.jpg" alt="">
+                      <div class="item__about">
+                        <div class="item__about-desc">
+                          <h2 class="item__about-name">Ягненок</h2>
+                          <span class="item__about-weight">Вес: 225 г</span>
+                        </div>
+                        <p class="item__about-text">
+                          Фаршированный гречневой кашей, курагой, апельсином и зеленым яблоком
+                        </p>
+                        <div class="item__about-basket">
+                          <button class="item__about-btn"><img src="./img/svg/1.svg" alt=""></button>
+                          <h2 class="item__about-price">450 ₽</h2>
+                          <button class="item__about-btn"><img src="./img/svg/plus.svg" alt=""></button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="item__items swiper-slide">
+                      <img class="item__img" src="./img/jpg/menu 1.jpg" alt="">
+                      <div class="item__about">
+                        <div class="item__about-desc">
+                          <h2 class="item__about-name">Ягненок</h2>
+                          <span class="item__about-weight">Вес: 225 г</span>
+                        </div>
+                        <p class="item__about-text">
+                          Фаршированный гречневой кашей, курагой, апельсином и зеленым яблоком
+                        </p>
+                        <div class="item__about-basket">
+                          <button class="item__about-btn"><img src="./img/svg/1.svg" alt=""></button>
+                          <h2 class="item__about-price">450 ₽</h2>
+                          <button class="item__about-btn"><img src="./img/svg/plus.svg" alt=""></button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="item__items swiper-slide">
+                      <img class="item__img" src="./img/jpg/menu 1.jpg" alt="">
+                      <div class="item__about">
+                        <div class="item__about-desc">
+                          <h2 class="item__about-name">Ягненок</h2>
+                          <span class="item__about-weight">Вес: 225 г</span>
+                        </div>
+                        <p class="item__about-text">
+                          Фаршированный гречневой кашей, курагой, апельсином и зеленым яблоком
+                        </p>
+                        <div class="item__about-basket">
+                          <button class="item__about-btn"><img src="./img/svg/1.svg" alt=""></button>
+                          <h2 class="item__about-price">450 ₽</h2>
+                          <button class="item__about-btn"><img src="./img/svg/plus.svg" alt=""></button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="item__items swiper-slide">
+                      <img class="item__img" src="./img/jpg/menu 1.jpg" alt="">
+                      <div class="item__about">
+                        <div class="item__about-desc">
+                          <h2 class="item__about-name">Ягненок</h2>
+                          <span class="item__about-weight">Вес: 225 г</span>
+                        </div>
+                        <p class="item__about-text">
+                          Фаршированный гречневой кашей, курагой, апельсином и зеленым яблоком
+                        </p>
+                        <div class="item__about-basket">
+                          <button class="item__about-btn"><img src="./img/svg/1.svg" alt=""></button>
+                          <h2 class="item__about-price">450 ₽</h2>
+                          <button class="item__about-btn"><img src="./img/svg/plus.svg" alt=""></button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-pagination"></div>
                 </div>
+              </div>
             </div>
-        </div>
     </section>
 
     <section class="block">
@@ -192,7 +294,7 @@
                 </div>
             </div>
         </div>
-        <div id="map" style="width: 100%; height:500px"></div>
+        <div id="map" style="width: 100%; height:550px"></div>
     </section>
 </main>
 
@@ -228,7 +330,9 @@
   </div>
 </footer>
 
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <script src="https://api-maps.yandex.ru/2.0/?load=package.full&lang=ru-RU"></script>
+<script src="./js/swiper.js"></script>
 <script src="./js/index.js"></script>
 </body>
 </html>

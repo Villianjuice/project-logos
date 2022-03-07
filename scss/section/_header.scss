@@ -2,6 +2,53 @@
     background: $bg-brown;
     box-shadow: 0px 30px 60px rgba(34, 31, 32, 0.2);
     padding: 23px 0 24px 0;
+    &-content{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &-label{
+        display: flex;
+        background: #504B4A;
+        border-radius: 8px;
+        padding: 15px;
+        margin-top: 10px;
+    }
+    &-input{
+        margin-left: 15px;
+        width: 100%;
+        background-color: transparent;
+        outline: none;
+        border: none;
+        @include font(400, 18px);
+        color: $text-gray;
+        &::placeholder{
+            @include font(400, 18px);
+            color: $text-gray;
+        }
+    }
+    &-menu{
+        @include font(700, 12px);
+        line-height: 15px;
+        color: $text-white;
+    }
+    &-basket{
+        background: linear-gradient(114.93deg, #618967 5.11%, #72A479 94%);
+        border-radius: 10px;
+        padding: 8px;
+        align-items: center;
+        text-align: center;
+        &__img{
+            display: inline-block;
+            text-align: center;
+        }
+        &__title{
+            display: block;
+            @include font(600, 12px);
+            line-height: 14px;
+            color: $text-white;
+        }
+    }
     &__content{
         display: flex;
         align-items: center;
