@@ -11,28 +11,38 @@
         @include font(700, 25px);
         color: $text-white;
     }
-    &__label{
+    .search{
+        position: relative;
         display: flex;
-        align-items: center;
         background: $bg-brown-light;
-        padding: 16px 20px;
+        
         border-radius: 10px;
-    }
-    &__input{
-        margin-left: 14px;
-        width: 100%;
-        background-color: transparent;
-        outline: none;
-        border: none;
-        @include font(400, 18px);
-        color: $text-gray;
-        &::placeholder{
-            @include font(400, 18px);
-            color: $text-gray;
+        &__input{
+            outline: none;
+            border: none;
+            border-radius: 10px;
+            background: transparent;
+            @include font(16px, 400);
+            color: $text-white;
+            padding: 20px 65px 20px 30px;
+            width: 525px;
+            height: 52px;
+            &::placeholder {
+                @include font(16px, 400);
+                color: $text-gray;
+            }
         }
-    }
-    &__search{
-        margin-left: 258px;
+        &__btn{
+            position: absolute;
+            top: 0.9rem;
+            right: 0.9rem;
+            background-image: url("../../img/svg/Search.svg");
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: 2.5rem;
+            height: 1.5rem;
+            background-position: center;
+        }
     }
     &__contact{
         display: flex;

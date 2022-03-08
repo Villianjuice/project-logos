@@ -50,7 +50,9 @@
 }
 .accordion {
     &-panel{
-        margin-bottom: 10px;
+        &:not(:last-child) {
+            margin-bottom: 9.7px;
+        }
         background: linear-gradient(90deg, #494544 0%, #504B4A 100%);
         border-radius: 10px;
     }

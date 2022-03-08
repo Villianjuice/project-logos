@@ -223,7 +223,10 @@
         width: 100%;
       }
       &-value{
-        margin: 0 18px;
+        width: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
       }
     }
     &__label{

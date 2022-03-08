@@ -45,17 +45,21 @@
         align-items: center;
       }
       &-btn{
-        width: 62px;
-        height: 44px;
         display: flex;
         justify-content: center;
         align-items: center;
         background: linear-gradient(114.93deg, #618967 5.11%, #72A479 94%);
         border-radius: 10px;
+        padding: 10px 10px 10px 20px;
       }
       &-price{
         @include font(600, 20px);
         color:$text-white;
+      }
+      &-span{
+        @include font(400, 13px);
+        color: $text-white;
+        margin-right: 12px;
       }
     }
     img{

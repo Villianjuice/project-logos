@@ -15,10 +15,13 @@ for (const accordion of accordions) {
 }
 
 
-ymaps.ready(init); 
-function init(){
-    var mPlayMap = new ymaps.Map("map",{center: [55.75985606898725,37.61054750000002],zoom: 12});
-    myMap.controls.add("zoomControl").add("typeSelector").add("mapTools");
-    var mycemark = new ymaps.Placemark([55.75985606898725,37.61054750000002]);
-    myMap.geoObjects.add(myPlacemark);	
-}
+// ymaps.ready(init); 
+// function init(){
+//     var mPlayMap = new ymaps.Map("map",{center: [55.75985606898725,37.61054750000002],zoom: 12});
+//     myMap.controls.add("zoomControl").add("typeSelector").add("mapTools");
+//     var mycemark = new ymaps.Placemark([55.75985606898725,37.61054750000002]);
+//     myMap.geoObjects.add(myPlacemark);	
+// }
+
+
+
