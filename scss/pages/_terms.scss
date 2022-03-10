@@ -1,7 +1,8 @@
 .terms{
     margin-bottom: 40px;
     &-content{
-        display: flex;
+        display: grid;
+        grid-template-columns: 618px 640px;
         gap: 20px;
     }
     &-item{
@@ -60,8 +61,7 @@
         @include font(400, 16px);
         color: $text-white;
         line-height: 25px;
-        padding: 60px 40px 60px 30px;
-        width: 618px;
+        padding: 60px 40px 60px 30px;;
         background: linear-gradient(90deg, #494544 0%, #504B4A 100%);
         border-radius: 0 0 10px 10px;
         display: none;
@@ -74,7 +74,6 @@
         background: linear-gradient(114.93deg, #618967 5.11%, #72A479 94%);
         border-radius: 10px;
         padding: 18px 0 18px 30px;
-        width: 618px;
         text-align: left;
         border: none;
         outline: none;
@@ -91,6 +90,7 @@
 
 
 .time{
+    max-width: 615px;
     &__title{
         @include font(700, 22px);
         color: $text-white;

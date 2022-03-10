@@ -38,7 +38,9 @@
     }
     &__cart{
         display: flex;
-        align-items: center
+        align-items: center;
+        gap: 30px;
+
     }
     &__basket{
         @include font(600, 14px);
@@ -50,7 +52,6 @@
     &__price{
         @include font(700, 25px);
         color: $text-white;
-        margin-left: 25px;
     }
     &__img{
         width: 40%;

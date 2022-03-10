@@ -13,6 +13,7 @@
         "../scss/section/_footer.scss",
         "../scss/section/_block.scss",
         "../scss/section/_rec.scss",
+        "../scss/section/_about.scss",
         "../scss/pages/_delivery.scss",
         "../scss/pages/_terms.scss",
         "../scss/pages/_cart.scss",

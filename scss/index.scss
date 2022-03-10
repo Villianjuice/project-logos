@@ -9,6 +9,7 @@
 @import'./section/footer';
 @import './section/block';
 @import './section/rec';
+@import './section/about';
 
 @import'./pages/delivery';
 @import'./pages/terms';
@@ -28,9 +29,10 @@
         max-width: 1390px;
     }
 }
-body{
+html,body{
   background: linear-gradient(360deg, #211F20 0%, #44403F 100%);
   color: $text-white;
+  overflow-x: hidden;
 }
 
 
@@ -43,10 +45,10 @@ body{
     max-width: 763px;
     margin: 0 auto;
 }
+
 .swiper{
     padding-bottom: 50px;
 }
-
 .ymaps-layers-pane {
   -ms-filter: invert(75%) grayscale(1) brightness(0.75);
   -webkit-filter: invert(75%) grayscale(1) brightness(0.75);
