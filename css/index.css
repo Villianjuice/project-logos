@@ -1724,7 +1724,6 @@ button {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.3;
-  line-height: 19px;
   color: #FFFFFF;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1749,7 +1748,18 @@ button {
 }
 
 .card__info {
-  padding: 35px 0 25px 50px;
+  padding: 35px 150px 25px 90px;
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .card__title {
@@ -1758,7 +1768,6 @@ button {
   font-weight: 700;
   font-size: 25px;
   line-height: 1.3;
-  line-height: 30px;
   color: #FFFFFF;
 }
 
@@ -1768,9 +1777,8 @@ button {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.3;
-  line-height: 16px;
   color: #CFCFCF;
-  margin: 10px 0 100px 0;
+  margin-bottom: 50px;
 }
 
 .card__weight {
@@ -1779,9 +1787,7 @@ button {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.3;
-  line-height: 16px;
   color: #CFCFCF;
-  margin-bottom: 20px;
   display: block;
 }
 
@@ -1800,7 +1806,6 @@ button {
   font-weight: 600;
   font-size: 14px;
   line-height: 1.3;
-  line-height: 17px;
   color: #FFFFFF;
   padding: 16px 20px;
   background: linear-gradient(114.93deg, #618967 5.11%, #72A479 94%);
@@ -1813,14 +1818,17 @@ button {
   font-weight: 700;
   font-size: 25px;
   line-height: 1.3;
-  line-height: 30px;
   color: #FFFFFF;
   margin-left: 25px;
 }
 
+.card__img {
+  width: 40%;
+}
+
 .card img {
-  display: block;
   border-radius: 10px 0 0 10px;
+  height: 100%;
 }
 
 .card__border {
@@ -1945,5 +1953,29 @@ body {
   -moz-filter: invert(75%) grayscale(1) brightness(0.75);
   -o-filter: invert(75%) grayscale(1) brightness(0.75);
   filter: invert(75%) grayscale(1) brightness(0.75);
+}
+
+.product-controls__quantity {
+  width: 9%;
+  margin-left: .5rem;
+}
+
+.product-controls__quantity select {
+  width: 100%;
+  max-width: 352px;
+  height: 40px;
+  margin: 0;
+  padding: 0 10px;
+  border: 1px solid #666;
+  border-radius: 2px;
+  background: #72A479 url(../img/svg/chevron-down-thin-24.1667eab2.svg) no-repeat right 8px center/1.5rem;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  font-size: 1rem;
+  line-height: 1.15;
+  font-family: inherit;
+  text-transform: none;
+  color: white;
 }
 /*# sourceMappingURL=index.css.map */

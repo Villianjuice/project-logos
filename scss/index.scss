@@ -54,3 +54,25 @@ body{
   -o-filter: invert(75%) grayscale(1) brightness(0.75);
   filter: invert(75%) grayscale(1) brightness(0.75);
 }
+.product-controls__quantity {
+	width: 9%;
+	margin-left: .5rem;
+    select {
+        width: 100%;
+        max-width: 352px;
+        height: 40px;
+        margin: 0;
+        padding: 0 10px;
+        border: 1px solid #666;
+        border-radius: 2px;
+        background: #72A479 url(../img/svg/chevron-down-thin-24.1667eab2.svg) no-repeat right 8px center/1.5rem;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        font-size: 1rem;
+        line-height: 1.15;
+        font-family: inherit;
+        text-transform: none;
+        color: white;
+    }
+}
